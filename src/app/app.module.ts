@@ -25,12 +25,16 @@ import {
   MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule,
   MatStepperModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, MatTreeModule
 } from '@angular/material';
+import { HeaderMobileComponent } from './common/header-mobile.component';
+import { WelcomeImgComponent } from './home/welcome-img.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
+    HeaderMobileComponent,
+    WelcomeImgComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,10 @@
-<app-header></app-header>
-<div class="wrapper-app">
-  <router-outlet></router-outlet>
-</div>
-<footer>
-</footer>
+<mat-sidenav-container>  
+  <app-header-mobile></app-header-mobile>
+  <mat-sidenav-content>
+    <app-header></app-header>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+  
