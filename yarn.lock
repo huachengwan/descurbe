@@ -219,6 +219,13 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@coreui/angular@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@coreui/angular/-/angular-2.1.0.tgz#4aeede8c7d2968c9da7164e5a77d792ce9dbf4f4"
+  integrity sha512-c0FSOjI/cyFG9P16Tu420JeEv3QFtoGogAyhNqAKGBaISGVdQ7U4KxI5H3QfCGJExiiSnyvIY9TUs6pNU/oqPg==
+  dependencies:
+    tslib "^1.9.0"
+
 "@material-ui/core@3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-3.1.0.tgz#40c70e0764ef27dca5e149551577eba10c2e79ce"
