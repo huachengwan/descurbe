@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { SharedModule } from './shared/shared.module';
 import { AuthModule } from './auth/auth.module';
@@ -13,8 +14,6 @@ import { AuthHeaderInterceptor } from './interceptors/header.interceptor';
 import { CatchErrorInterceptor } from './interceptors/http-error.interceptor';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './common/header.component';
 
 import {
   MatAutocompleteModule, MatBadgeModule, MatBottomSheetModule, MatButtonModule,
@@ -25,6 +24,9 @@ import {
   MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule,
   MatStepperModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, MatTreeModule
 } from '@angular/material';
+
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './common/header.component';
 import { HeaderMobileComponent } from './common/header-mobile.component';
 import { WelcomeImgComponent } from './home/welcome-img.component';
 
@@ -81,6 +83,8 @@ import { WelcomeImgComponent } from './home/welcome-img.component';
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
+
+    MDBBootstrapModule,
   ],
   exports: [
     MatAutocompleteModule,
@@ -118,6 +122,7 @@ import { WelcomeImgComponent } from './home/welcome-img.component';
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
+    
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,

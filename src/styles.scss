@@ -3,6 +3,9 @@
 @import '~angular-tree-component/dist/angular-tree-component.css';
 @import '~@angular/material/theming';
 @import '~dragula/dist/dragula.css';
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap-grid';
 
 $custom-typography: mat-typography-config(
     $font-family: 'Exo'
@@ -10,15 +13,20 @@ $custom-typography: mat-typography-config(
 
 @include mat-core($custom-typography);
 
+@font-face {
+  font-family: 'Oswald';
+  src: url('./assets/fonts/oswald-regular-webfont.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: #f4f3f3;
   margin: 0;
-  app-root * {
-    font-family: 'Exo', sans-serif;
-  }
+  font-family: 'Oswald', sans-serif;
 }
 
-.container {
-  width: 1100px;
-  margin: 0 auto;
+ul{
+  list-style: none;
+  padding-left: 0;
 }
