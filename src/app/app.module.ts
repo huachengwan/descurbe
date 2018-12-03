@@ -117,7 +117,7 @@ import { HomeSubscriptionComponent } from './home/home-subscription.component';
 
     MDBBootstrapModule,
     AgmCoreModule.forRoot({
-      apiKey: ''
+      apiKey: 'AIzaSyBslHE0NY-gTEOEQoJ_grZ682vBFi4rYTI'
     })
   ],
   exports: [

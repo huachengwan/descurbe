@@ -3,32 +3,57 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-home-welcomeimage',
   template: `
-  <div class="container-fluid" style="background-image: url(&quot;assets/img/descubreleon/inicio_files/inicio_viena.jpg&quot;);">
-    <div class="container">
-      <div class="row ">
-          <div class="col text-center px-0">
-              <h1 class="ng-tns-c6-10 ng-trigger ng-trigger-bmaincontainer" style="padding-top: 0px; opacity: 1;">
-                  <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">FROM AUSTRIA, THEY VISIT DISCOVERY.MX</font>
-                  </font>
-              </h1>
-              <p class="ng-tns-c6-10 ng-trigger ng-trigger-bmaincontainer" style="padding-top: 0px; opacity: 1;">
-                  <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">We celebrate 10 years and we celebrate it with our visitors from all over the world</font>
-                  </font>
-              </p>
-              <button class="ng-tns-c6-10 ng-trigger ng-trigger-bmaincontainer" style="padding-top: 0px; opacity: 1;">
-                  <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">SEE PHOTOS&gt;</font>
-                  </font>
-              </button>
+    <div class="container-fluid">
+      <div class="container welcome-text">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="text-center">DESDE AUSTRIA, ELLOS VISITAN DESCUBRELEON.MX</h4>
+            <p class="text-center">
+              <span class="desc">Cumplimos 10 años y lo celebramos con nuestros visitantes de todo el mundo.</span>
+            </p>
+            <p class="text-center"><button class="btn">Ver fotos &gt;</button></p>
           </div>
+        </div>
       </div>
     </div>
-</div>
   `,
   styles: [`
-  
+    .container-fluid {
+      position: relative; padding: 0px;
+      background-image: url('assets/img/home/inicio_viena.jpg');
+      background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;
+      height: 900px;
+    }
+    .welcome-text {
+    }
+    .welcome-text h4 {
+      margin-top: 70px;
+      font-size: 3.21em; font-weight: bold;
+    }
+    .welcome-text p span.desc {
+      font-size: 2.28em; line-height: 1.2em;
+    }
+    .welcome-text .btn {
+      font-size: 2.28em; color: #fff; font-weight: bold;
+      background-color: #0e8b2f;
+    }
+    @media (max-width: 767.98px) {
+      .container-fluid {
+        height: 600px;
+      }
+      .welcome-text h4 {
+        margin-top: 50px;        
+      }
+    }
+    @media (max-width: 479.98px) {
+      .container-fluid {
+        height: 340px;
+      }
+      .welcome-text h4 {
+        margin-top: 30px;
+      }
+    }
+    
   `]
 })
 export class HomeWelcomeimageComponent implements OnInit {

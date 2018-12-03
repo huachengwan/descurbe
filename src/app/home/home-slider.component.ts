@@ -3,17 +3,17 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-home-slider',
   template: `
-  <div _ngcontent-c7="" class="container">
-    <div _ngcontent-c7="" class="row">
-        <div _ngcontent-c7="" class="col">
-            <h1 _ngcontent-c7="" class="h1_subt_mainpage">
-                <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">OUTSTANDING</font>
-                </font>
-            </h1>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="h1_subt_mainpage">
+            DESTACADO ESTE MES
+          </h1>
         </div>
+      </div>
     </div>
-  </div>
+  </div>  
   <div class="container-fluid" style="background-image: url(&quot;assets/img/descubreleon/inicio_files/inicio-slider_1.jpg&quot;);">
     <div class="container">
       <div class="row ">
