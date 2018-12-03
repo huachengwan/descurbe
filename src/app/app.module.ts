@@ -24,6 +24,7 @@ import {
   MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule,
   MatStepperModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, MatTreeModule
 } from '@angular/material';
+import { AgmCoreModule } from '@agm/core';
 
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './common/header.component';
@@ -115,6 +116,9 @@ import { HomeSubscriptionComponent } from './home/home-subscription.component';
     MatTreeModule,
 
     MDBBootstrapModule,
+    AgmCoreModule.forRoot({
+      apiKey: ''
+    })
   ],
   exports: [
     MatAutocompleteModule,
