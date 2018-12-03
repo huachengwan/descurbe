@@ -42,6 +42,8 @@ import { CafeComponent } from './home/cafe/cafe.component';
 import { BarComponent } from './home/bar/bar.component';
 import { HotelComponent } from './home/hotel/hotel.component';
 import { BathComponent } from './home/bath/bath.component';
+import { HomeMapComponent } from './home/home-map.component';
+import { HomeSubscriptionComponent } from './home/home-subscription.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +65,8 @@ import { BathComponent } from './home/bath/bath.component';
     BarComponent,
     HotelComponent,
     BathComponent,
+    HomeMapComponent,
+    HomeSubscriptionComponent,
   ],
   imports: [
     BrowserModule,
