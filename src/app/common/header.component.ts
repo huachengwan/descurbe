@@ -23,4 +23,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  searchWord = '';
+  search() {
+    console.log(this.searchWord);
+  }
+
 }

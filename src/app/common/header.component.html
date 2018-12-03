@@ -41,10 +41,36 @@
   </div>
 </mat-toolbar>
 <div class="header-section">
+  <div class="container">
+    <img class="logo d-none d-md-block" src="assets/img/logo_descubreleon.png"/>
+    <div class="search-bar d-none d-md-block">
+      <form>
+        <input type="text" class="form-control" placeholder="Buscar" [(ngModel)]="searchWord" [ngModelOptions]="{standalone: true}"/>
+        <button class="search-btn" (click)="search()">
+          <mat-icon fontSet="fa" fontIcon="fa-search"></mat-icon>
+        </button>
+      </form>
+    </div>
+    <img class="logo-mobile d-md-none" src="assets/img/logo_descubreleon.png"/>
+  </div>  
   <div class="background-carousel">
-    <figure></figure>
-    <figure></figure>
-    <figure></figure>
-    <figure></figure>
+    <div class="image"></div>
+    <div class="image"></div>
+    <div class="image"></div>
+    <div class="image"></div>
+  </div>  
+</div>
+<div class="main-menu">
+  <div class="container">
+    <div class="menu-btn-group">
+      <button mat-button>INICIO</button>
+      <button mat-button>EVENTOS</button>
+      <button mat-button>ATRACCIONES</button>
+      <button mat-button>RESTAURANTES</button>
+      <button mat-button>CAFÉS</button>
+      <button mat-button>BARES</button>
+      <button mat-button>HOTELES</button>
+      <button mat-button>SPAS</button>
+    </div>
   </div>
 </div>

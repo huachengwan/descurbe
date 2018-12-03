@@ -37,35 +37,6 @@ mat-toolbar {
   }
 }
 
-.background-carousel {
-  height: 200px;
-  figure {
-    animation: imageAnimation 30s linear infinite 0s;
-    backface-visibility: hidden; background-size: cover; background-position: center center;
-    color: transparent;
-    width: 100%; height: 100%;
-    top: 0px; left: 0px;
-    opacity: 0;
-    position: absolute;
-    z-index: 0;
-    &:nth-child(1) {
-      background-image: url('../../assets/img/banner_fuente.jpg');
-    }
-    &:nth-child(2) {
-      animation-delay: 6s;
-      background-image: url('../../assets/img/banner_arco.jpg');
-    }
-    &:nth-child(3) {
-      animation-delay: 12s;
-      background-image: url('../../assets/img/banner_ballet.jpg');
-    }
-    &:nth-child(4) {
-      animation-delay: 18s;
-      background-image: url('../../assets/img/banner_pizza.jpg');
-    }
-  }
-}
-
 @keyframes imageAnimation {  
   0% {
    animation-timing-function: ease-in;
@@ -80,5 +51,142 @@ mat-toolbar {
   }
   100% {
     opacity: 0
+  }
+}
+.header-section {
+  position: relative;
+  .background-carousel {
+    height: 230px;
+    position: relative;
+    .image {
+      animation: imageAnimation 24s linear infinite 0s;
+      backface-visibility: hidden; background-size: cover; background-position: center center;
+      color: transparent;
+      width: 100%; height: 100%;
+      top: 0px; left: 0px;
+      opacity: 0;
+      position: absolute;
+      z-index: 0;
+      &:nth-child(1) {
+        background-image: url('../../assets/img/banner_fuente.jpg');
+      }
+      &:nth-child(2) {
+        animation-delay: 6s;
+        background-image: url('../../assets/img/banner_arco.jpg');
+      }
+      &:nth-child(3) {
+        animation-delay: 12s;
+        background-image: url('../../assets/img/banner_ballet.jpg');
+      }
+      &:nth-child(4) {
+        animation-delay: 18s;
+        background-image: url('../../assets/img/banner_pizza.jpg');
+      }
+    }
+  }
+  .container {
+    position: relative;
+    .logo {
+      position: absolute;
+      left: 0;
+      top: -30px;
+      z-index: 100;
+    }
+    .logo-mobile {
+      position: absolute;
+      left: calc(50% - 88px);
+      top: -10px;
+      z-index: 100;
+    }
+    .search-bar {
+      position: absolute;
+      right: 0;
+      top: 80px;
+      z-index: 100;
+      input {
+        width: 240px
+      }
+      .search-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: none;
+        border: 0 none;
+        line-height: 2.2em;
+      }
+    }
+  }  
+}
+
+.main-menu {
+  .menu-btn-group {
+    button {
+      color: #000;
+      font-size: 19.5px; font-weight: 700; line-height: 27px;
+      text-align: center;       
+      background-color: #fff;
+      padding-left: 35px;
+      padding-right: 35px;
+      border-bottom: 4px solid #e8eae9;
+      &:hover, &.active {
+        color: #fff;
+      }
+      &:nth-child(1) {
+        background-color: #e8eae9;
+        border-bottom-color: #e8eae9;
+        &:hover, &.active {
+          background-color: #e8eae9;
+        }        
+      }
+      &:nth-child(2) {
+        background-color: #fccf04;
+        border-bottom-color: #fccf04;
+        &:hover, &.active {
+          background-color: #fccf04;
+        }        
+      }
+      &:nth-child(3) {
+        background-color: #0e8b2f;
+        border-bottom-color: #0e8b2f;
+        &:hover, &.active {
+          background-color: #0e8b2f;
+        }        
+      }
+      &:nth-child(4) {
+        background-color: #fa7b0a;
+        border-bottom-color: #fa7b0a;
+        &:hover, &.active {
+          background-color: #fa7b0a;
+        }        
+      }
+      &:nth-child(5) {
+        background-color: #926d27;
+        border-bottom-color: #926d27;
+        &:hover, &.active {
+          background-color: #926d27;
+        }        
+      }
+      &:nth-child(6) {
+        background-color: #010101;
+        border-bottom-color: #010101;
+        &:hover, &.active {
+          background-color: #010101;
+        }        
+      }
+      &:nth-child(7) {
+        background-color: #2556d6;
+        border-bottom-color: #2556d6;
+        &:hover, &.active {
+          background-color: #2556d6;
+        }        
+      }
+      &:nth-child(8) {
+        background-color: #45a9f5;
+        border-bottom-color: #45a9f5;
+        &:hover, &.active {
+          background-color: #45a9f5;
+        }        
+      }
+    }
   }
 }
