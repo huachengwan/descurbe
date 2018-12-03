@@ -5,67 +5,77 @@ import { ItemOfQue } from '../service/item-of-que';
 @Component({
   selector: 'app-home-que',
   template: `
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h1 class="">
-          <font style="vertical-align: inherit;">
-            <font style="vertical-align: inherit;">¿QUÉ HACER HOY EN LEÓN?</font>
-          </font>
-        </h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <button class="btn_quehacer_anterior d-block d-md-none">
-          <font style="vertical-align: inherit;">
-            <font style="vertical-align: inherit;">&gt;</font>
-          </font>
-        </button>
-        <button class="btn_quehacer_anterior d-none d-md-block">
-          <font style="vertical-align: inherit;">
-            <font style="vertical-align: inherit;">&lt;Previous</font>
-          </font>
-        </button>
-      </div>
-      <div class="col-md-6">
-        <font style="vertical-align: inherit;">
-          <font style="vertical-align: inherit;">Sunday, December 2, 2018</font>
-        </font>
-      </div>
-      <div class="col-md-3 ">
-        <button class="btn_quehacer_anterior d-block d-md-none">
-          <font style="vertical-align: inherit;">
-            <font style="vertical-align: inherit;">&gt;</font>
-          </font>
-        </button>
-        <button class="btn_quehacer_anterior d-none d-md-block">
-          <font style="vertical-align: inherit;">
-            <font style="vertical-align: inherit;">Next&gt;</font>
-          </font>
-        </button>
-      </div>
-    </div>
-    <div class="row">
-      <div *ngFor="let item of items" class="col-md-4 card-quehacerhoy">
-        <div class="img-container px-0" routerlink="/agenda" tabindex="0">
-          <div class="title">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class=" topic">
+          <h1 class="">
             <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">{{item.title}}</font>
+              <font style="vertical-align: inherit;">QUÉ HACER HOY EN LEÓN?</font>
             </font>
-          </div>
-          <button class="btn_more" routerlink="/agenda" tabindex="0">
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <button class="btn_previous d-block d-md-none">
             <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">See more&gt;</font>
+              <font style="vertical-align: inherit;">&gt;</font>
             </font>
           </button>
-          <img class="img-fluid" src="{{item.image_file}}">
+          <button class="btn_previous d-none d-md-block">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">&lt;Previous</font>
+            </font>
+          </button>
+        </div>
+        <div class="col-md-6 date">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Sunday, December 2, 2018</font>
+          </font>
+        </div>
+        <div class="col-md-3 ">
+          <button class="btn_next d-block d-md-none">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">&gt;</font>
+            </font>
+          </button>
+          <button class="btn_next d-none d-md-block">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Next&gt;</font>
+            </font>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div *ngFor="let item of items" class="col-md-4 card-image">
+          <div class="img-container px-0" routerlink="/agenda" tabindex="0">
+            <div class="title">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">{{item.title}}</font>
+              </font>
+            </div>
+            <button class="btn_more" routerlink="/agenda" tabindex="0">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">See more&gt;</font>
+              </font>
+            </button>
+            <img class="img-fluid" src="{{item.image_file}}">
+          </div>
         </div>
       </div>
     </div>
   </div>
   `,
   styles: [`
+  .container-fluid {
+  }
+  .container {
+    padding-left: 8%; padding-right:8%; padding-top:2%;
+  }
+  .card-image {
+    padding-bottom: 3%;
+  }
   .img-container {
     position: relative;
   }
@@ -79,6 +89,31 @@ import { ItemOfQue } from '../service/item-of-que';
     position: absolute;
     top: calc(50% - 30px);
     left: calc(50% - 12px);
+  }
+  .btn_next {
+    background-color: rgb(232, 234, 233);
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-family: Oswald;
+    width: 100%; height:100%;
+  }
+  .btn_previous {
+    background-color: rgb(232, 234, 233);
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-family: Oswald;
+    width: 100%; height:100%;
+  }
+  .date {
+    background-color: rgb(232, 234, 233);
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-family: Oswald;
+    width: 100%; height:100%;
   }
   `]
 })

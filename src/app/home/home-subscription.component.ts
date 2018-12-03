@@ -34,12 +34,15 @@ import { Component, OnInit } from '@angular/core';
     } 
     .submit {
       width: 100%;
+      margin-top: 0px;
       margin-inline-end: 313.5px; margin-inline-start: 313.5px;
-      margin-left: 313.5px; margin-right: 313.5px; margin-top: 40px;
+      margin-left: 313.5px; margin-right: 313.5px;
+      margin-bottom: 2%;
 
     }
     .form-control {
       max-width: 40%;
+      margin-left: 10%;
     }
     .btn_suscribirme {
       width: 40%;

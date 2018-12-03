@@ -9,11 +9,11 @@ import { ArticleService } from '../service/article.service';
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1 class="h1_subt_mainpage">
+          <h1 class="title">
             <font style="vertical-align: inherit;">
               <font style="vertical-align: inherit;">ANTROS Y BARES </font>
             </font>
-            <button class="btn_vertodos">
+            <button class="btn_seeAll">
               <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;">See All&gt;</font>
               </font>
@@ -22,14 +22,14 @@ import { ArticleService } from '../service/article.service';
         </div>
       </div>
       <div class="row">
-        <div *ngFor="let item of items" class="col-md-4 card-restaurante ng-star-inserted">
+        <div *ngFor="let item of items" class="col-md-4 card-image ng-star-inserted">
           <div class="img-container px-0" tabindex="0">
-            <div class="restaurante-img-label">
+            <div class="title">
               <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;">{{item.title}}</font>
               </font>
             </div>
-            <button class="btn_vermas" tabindex="0">
+            <button class="btn_more" tabindex="0">
               <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;">See more&gt;</font>
               </font>
@@ -42,7 +42,39 @@ import { ArticleService } from '../service/article.service';
   </div>  
   `,
   styles: [`
-  
+  .container-fluid {
+    background: rgb(0, 0, 0);
+  }
+  .container {
+    padding-left: 8%; padding-right:8%; padding-top:2%;
+  }
+  .card-image {
+    padding-bottom: 3%;
+  }
+  .img-container {
+    position: relative;
+  }
+  .title {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: Oswald;
+  }
+  .btn_seeAll {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Oswald;
+  }
+  .img-container .title {
+    position: absolute;
+    left: 0; top: 0;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 20px; color: #fff;
+  }
+  .img-container .btn_more {
+    position: absolute;
+    top: calc(50% - 30px);
+    left: calc(50% - 12px);
+  }
   `]
 })
 export class HomeAntrosComponent implements OnInit {
