@@ -28,7 +28,12 @@ import {
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './common/header.component';
 import { HeaderMobileComponent } from './common/header-mobile.component';
-import { WelcomeImgComponent } from './home/welcome-img.component';
+import { HomeWelcomeimageComponent } from './home/home-welcomeimage.component';
+import { HomeSliderComponent } from './home/home-slider.component';
+import { HomeQueComponent } from './home/home-que.component';
+import { HomeArticulosComponent } from './home/home-articulos.component';
+import { HomeRestaurantComponent } from './home/home-restaurant.component';
+import { HomeAntrosComponent } from './home/home-antros.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +41,12 @@ import { WelcomeImgComponent } from './home/welcome-img.component';
     HomeComponent,
     HeaderComponent,
     HeaderMobileComponent,
-    WelcomeImgComponent,
+    HomeWelcomeimageComponent,
+    HomeSliderComponent,
+    HomeQueComponent,
+    HomeArticulosComponent,
+    HomeRestaurantComponent,
+    HomeAntrosComponent,
   ],
   imports: [
     BrowserModule,
