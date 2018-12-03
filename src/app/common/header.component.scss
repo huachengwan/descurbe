@@ -3,6 +3,9 @@ mat-toolbar {
   height: auto;
   font: inherit;
 }
+.mat-button {
+  font-family: inherit;
+}
 .middle-text{
   a {
     width: 100%; display: block;
@@ -125,63 +128,61 @@ mat-toolbar {
       font-size: 19.5px; font-weight: 700; line-height: 27px;
       text-align: center;       
       background-color: #fff;
-      padding-left: 35px;
-      padding-right: 35px;
       border-bottom: 4px solid #e8eae9;
+      padding-left: 53px; padding-right: 52px; padding-top: 4px;
+      @media (max-width: 1023.98px) {
+        padding-left: 25px; padding-right: 25px;
+      }
+      @media (max-width: 767.98px) {
+        padding-left: 15px; padding-right: 15px;
+      }
       &:hover, &.active {
         color: #fff;
       }
       &:nth-child(1) {
-        background-color: #e8eae9;
         border-bottom-color: #e8eae9;
         &:hover, &.active {
+          color: #000;
           background-color: #e8eae9;
         }        
       }
       &:nth-child(2) {
-        background-color: #fccf04;
         border-bottom-color: #fccf04;
         &:hover, &.active {
           background-color: #fccf04;
         }        
       }
       &:nth-child(3) {
-        background-color: #0e8b2f;
         border-bottom-color: #0e8b2f;
         &:hover, &.active {
           background-color: #0e8b2f;
         }        
       }
       &:nth-child(4) {
-        background-color: #fa7b0a;
         border-bottom-color: #fa7b0a;
         &:hover, &.active {
           background-color: #fa7b0a;
         }        
       }
       &:nth-child(5) {
-        background-color: #926d27;
         border-bottom-color: #926d27;
         &:hover, &.active {
           background-color: #926d27;
         }        
       }
       &:nth-child(6) {
-        background-color: #010101;
         border-bottom-color: #010101;
         &:hover, &.active {
           background-color: #010101;
         }        
       }
       &:nth-child(7) {
-        background-color: #2556d6;
         border-bottom-color: #2556d6;
         &:hover, &.active {
           background-color: #2556d6;
         }        
       }
       &:nth-child(8) {
-        background-color: #45a9f5;
         border-bottom-color: #45a9f5;
         &:hover, &.active {
           background-color: #45a9f5;
