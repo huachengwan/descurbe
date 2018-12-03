@@ -28,6 +28,7 @@ import {
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './common/header.component';
 import { HeaderMobileComponent } from './common/header-mobile.component';
+import { FooterComponent } from './common/footer.component';
 import { HomeWelcomeimageComponent } from './home/home-welcomeimage.component';
 import { HomeSliderComponent } from './home/home-slider.component';
 import { HomeQueComponent } from './home/home-que.component';
@@ -41,6 +42,7 @@ import { HomeAntrosComponent } from './home/home-antros.component';
     HomeComponent,
     HeaderComponent,
     HeaderMobileComponent,
+    FooterComponent,
     HomeWelcomeimageComponent,
     HomeSliderComponent,
     HomeQueComponent,
