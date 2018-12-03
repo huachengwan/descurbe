@@ -35,8 +35,6 @@ import { ItemOfArticulos } from '../service/item-of-articulos';
   styles: [`
   .container-fluid {
     background: rgb(232, 233, 233);
-  }
-  .container {
     padding-left: 8%; padding-right:8%; padding-top:2%;
   }
   `]

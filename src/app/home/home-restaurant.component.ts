@@ -49,8 +49,6 @@ class Item {
   styles: [`
   .container-fluid {
     background: rgb(250, 123, 10);
-  }
-  .container {
     padding-left: 8%; padding-right:8%; padding-top:2%;
   }
   .card-image {
@@ -62,9 +60,18 @@ class Item {
     font-family: Oswald;
   }
   .btn_seeAll {
+    background-color: rgb(250, 123, 10);
+    border: 0;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 20%; height: 30px;
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-family: Oswald;
+    float: right;
+  }
+  .btn_seeAll:hover {
+    background-color: rgb(14, 139, 47);
   }
   .topic {
   }

@@ -44,8 +44,6 @@ import { ArticleService } from '../service/article.service';
   styles: [`
   .container-fluid {
     background: rgb(0, 0, 0);
-  }
-  .container {
     padding-left: 8%; padding-right:8%; padding-top:2%;
   }
   .card-image {
@@ -60,9 +58,18 @@ import { ArticleService } from '../service/article.service';
     font-family: Oswald;
   }
   .btn_seeAll {
+    background-color: rgb(0, 0, 0);
+    border: 0;
+    margin-top:10px;
+    width: 20%; height: 30px;
+    cursor: pointer;
+    float: right;
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-family: Oswald;
+  }
+  .btn_seeAll:hover {
+    background-color: rgb(14, 139, 47);
   }
   .img-container .title {
     position: absolute;
