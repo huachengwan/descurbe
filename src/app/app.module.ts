@@ -35,6 +35,13 @@ import { HomeQueComponent } from './home/home-que.component';
 import { HomeArticulosComponent } from './home/home-articulos.component';
 import { HomeRestaurantComponent } from './home/home-restaurant.component';
 import { HomeAntrosComponent } from './home/home-antros.component';
+import { EventComponent } from './home/event/event.component';
+import { AttractionComponent } from './home/attraction/attraction.component';
+import { RestaurantComponent } from './home/restaurant/restaurant.component';
+import { CafeComponent } from './home/cafe/cafe.component';
+import { BarComponent } from './home/bar/bar.component';
+import { HotelComponent } from './home/hotel/hotel.component';
+import { BathComponent } from './home/bath/bath.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +56,13 @@ import { HomeAntrosComponent } from './home/home-antros.component';
     HomeArticulosComponent,
     HomeRestaurantComponent,
     HomeAntrosComponent,
+    EventComponent,
+    AttractionComponent,
+    RestaurantComponent,
+    CafeComponent,
+    BarComponent,
+    HotelComponent,
+    BathComponent,
   ],
   imports: [
     BrowserModule,
