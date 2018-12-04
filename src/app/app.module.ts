@@ -36,6 +36,9 @@ import { HomeQueComponent } from './home/home-que.component';
 import { HomeArticleComponent } from './home/home-article.component';
 import { HomeRestaurantComponent } from './home/home-restaurant.component';
 import { HomeAntrosComponent } from './home/home-antros.component';
+import { HomeMapComponent } from './home/home-map.component';
+import { HomeSubscriptionComponent } from './home/home-subscription.component';
+import { HomeSidebarComponent } from './home/home-sidebar.component';
 import { EventComponent } from './home/event/event.component';
 import { AttractionComponent } from './home/attraction/attraction.component';
 import { RestaurantComponent } from './home/restaurant/restaurant.component';
@@ -43,8 +46,12 @@ import { CafeComponent } from './home/cafe/cafe.component';
 import { BarComponent } from './home/bar/bar.component';
 import { HotelComponent } from './home/hotel/hotel.component';
 import { BathComponent } from './home/bath/bath.component';
-import { HomeMapComponent } from './home/home-map.component';
-import { HomeSubscriptionComponent } from './home/home-subscription.component';
+import { EventArchiveComponent } from './home/event/archive/archive.component';
+import { EventArchiveItemComponent } from './home/event/archive/item.component';
+import { EventDetailComponent } from './home/event/detail/detail.component';
+import { CafeListComponent } from './home/cafe/list/list.component';
+import { CafeListItemComponent } from './home/cafe/list/item.component';
+import { CafeDetailComponent } from './home/cafe/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -59,15 +66,22 @@ import { HomeSubscriptionComponent } from './home/home-subscription.component';
     HomeArticleComponent,
     HomeRestaurantComponent,
     HomeAntrosComponent,
+    HomeMapComponent,
+    HomeSubscriptionComponent,
+    HomeSidebarComponent,
     EventComponent,
+    EventArchiveComponent,
+    EventArchiveItemComponent,
+    EventDetailComponent,
     AttractionComponent,
     RestaurantComponent,
     CafeComponent,
+    CafeListComponent,
+    CafeListItemComponent,
+    CafeDetailComponent,
     BarComponent,
     HotelComponent,
     BathComponent,
-    HomeMapComponent,
-    HomeSubscriptionComponent,
   ],
   imports: [
     BrowserModule,
