@@ -141,12 +141,12 @@ mat-toolbar {
       text-align: center;       
       background-color: #fff;
       border-bottom: 4px solid #e8eae9;
-      padding-left: 51px; padding-right: 51px; padding-top: 4px;
-      @media (max-width: 1023.98px) {
-        padding-left: 25px; padding-right: 25px;
+      padding-top: 4px;
+      .mat-button-wrapper {
+        width: 100%;
       }
-      @media (max-width: 767.98px) {
-        padding-left: 15px; padding-right: 15px;
+      span {
+        width: 100%;
       }
       &:hover, &.active {
         color: #fff;
