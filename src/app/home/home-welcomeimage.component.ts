@@ -22,7 +22,7 @@ import { Component, OnInit } from '@angular/core';
       position: relative; padding: 0px;
       background-image: url('assets/img/home/inicio_viena.jpg');
       background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;
-      height: 900px;
+      height: 1200px;
     }
     .welcome-text {
     }
@@ -36,6 +36,14 @@ import { Component, OnInit } from '@angular/core';
     .welcome-text .btn {
       font-size: 2.28em; color: #fff; font-weight: bold;
       background-color: #0e8b2f;
+    }
+    @media (max-width: 1023.98px) {
+      .container-fluid {
+        height: 800px;
+      }
+      .welcome-text h4 {
+        margin-top: 50px;        
+      }
     }
     @media (max-width: 767.98px) {
       .container-fluid {
