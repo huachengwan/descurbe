@@ -1,4 +1,4 @@
-export class ItemOfAntros {
+export class ItemOfEvent {
     public title: string;
     public link: string;
     public image_file: string;

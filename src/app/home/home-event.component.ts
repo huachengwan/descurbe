@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { ArticleService } from '../service/article.service';
-import { ItemOfQue } from '../service/item-of-que';
+import { ItemOfEvent } from '../service/item-of-event';
 
 @Component({
-  selector: 'app-home-que',
+  selector: 'app-home-event',
   template: `
     <div class="container-fluid">
       <div class="container">
@@ -152,13 +152,13 @@ import { ItemOfQue } from '../service/item-of-que';
     ])
   ]
 })
-export class HomeQueComponent implements OnInit {
-  items: ItemOfQue[];
+export class HomeEventComponent implements OnInit {
+  items: ItemOfEvent[];
 
   constructor(
     articleService: ArticleService
   ) {
-    this.items = articleService.getQue();
+    this.items = articleService.getEvent();
   }
 
   ngOnInit() {

@@ -1,4 +1,4 @@
-export class ItemOfQue {
+export class ItemOfBar {
     public title: string;
     public link: string;
     public image_file: string;

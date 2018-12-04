@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ItemOfAntros } from '../service/item-of-antros';
+import { ItemOfBar } from '../service/item-of-bar';
 import { ArticleService } from '../service/article.service';
 
 @Component({
-  selector: 'app-home-antros',
+  selector: 'app-home-bar',
   template: `
   <div class="container-fluid">
     <div class="container">
@@ -94,13 +94,13 @@ import { ArticleService } from '../service/article.service';
   }
   `]
 })
-export class HomeAntrosComponent implements OnInit {
-  items: ItemOfAntros[];
+export class HomeBarComponent implements OnInit {
+  items: ItemOfBar[];
 
   constructor(
     articleService: ArticleService
   ) {
-    this.items = articleService.getAntros();
+    this.items = articleService.getBar();
   }
 
   ngOnInit() {

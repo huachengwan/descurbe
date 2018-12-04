@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { ItemOfRestaurant } from './item-of-restaurant'
-import { ItemOfQue } from './item-of-que'
+import { ItemOfEvent } from './item-of-event'
 import { ItemOfArticle } from './item-of-article';
-import { ItemOfAntros } from './item-of-antros';
+import { ItemOfBar } from './item-of-bar';
 
 
 @Injectable({
@@ -22,14 +22,14 @@ export class ArticleService {
     return list;
   }
 
-  getQue(): ItemOfQue[] {
+  getEvent(): ItemOfEvent[] {
     let list = [];
-    list.push(new ItemOfQue('The lighthouse', 'restaurantes',  'assets/img/descubreleon/agenda/agenda_files/parque-gj_01.jpg'));
-    list.push(new ItemOfQue('The lighthouse', 'restaurantes',  'assets/img/descubreleon/agenda/agenda_files/rest_mariskena-molcajete.jpg'));
-    list.push(new ItemOfQue('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/cafes_01.jpg'));
-    list.push(new ItemOfQue('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/01nov_teatro-ejemplo.jpg'));
-    list.push(new ItemOfQue('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/01nov_musica-ejemplo.jpg'));
-    list.push(new ItemOfQue('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/antros_01.jpg'));
+    list.push(new ItemOfEvent('The lighthouse', 'restaurantes',  'assets/img/descubreleon/agenda/agenda_files/parque-gj_01.jpg'));
+    list.push(new ItemOfEvent('The lighthouse', 'restaurantes',  'assets/img/descubreleon/agenda/agenda_files/rest_mariskena-molcajete.jpg'));
+    list.push(new ItemOfEvent('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/cafes_01.jpg'));
+    list.push(new ItemOfEvent('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/01nov_teatro-ejemplo.jpg'));
+    list.push(new ItemOfEvent('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/01nov_musica-ejemplo.jpg'));
+    list.push(new ItemOfEvent('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/antros_01.jpg'));
     return list;
   }
 
@@ -42,14 +42,14 @@ export class ArticleService {
     return list;
   }
 
-  getAntros(): ItemOfAntros[] {
+  getBar(): ItemOfBar[] {
     let list = [];
-    list.push(new ItemOfAntros('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/vn_barezzito_01.jpg'));
-    list.push(new ItemOfAntros('The lighthouse', 'restaurantes',  'assets/img/descubreleon/agenda/agenda_files/vn_etnico_01.jpg'));
-    list.push(new ItemOfAntros('The lighthouse', 'restaurantes',  'assets/img/descubreleon/agenda/agenda_files/vn_500noches_01.jpg'));
-    list.push(new ItemOfAntros('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/vn_panic-botanic_01.jpg'));
-    list.push(new ItemOfAntros('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/vn_panteon-calzada_01.jpg'));
-    list.push(new ItemOfAntros('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/vn_rey-compadre_01.jpg'));
+    list.push(new ItemOfBar('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/vn_barezzito_01.jpg'));
+    list.push(new ItemOfBar('The lighthouse', 'restaurantes',  'assets/img/descubreleon/agenda/agenda_files/vn_etnico_01.jpg'));
+    list.push(new ItemOfBar('The lighthouse', 'restaurantes',  'assets/img/descubreleon/agenda/agenda_files/vn_500noches_01.jpg'));
+    list.push(new ItemOfBar('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/vn_panic-botanic_01.jpg'));
+    list.push(new ItemOfBar('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/vn_panteon-calzada_01.jpg'));
+    list.push(new ItemOfBar('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/vn_rey-compadre_01.jpg'));
     return list;
   }
 }

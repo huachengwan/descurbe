@@ -13,6 +13,9 @@ mat-toolbar {
     text-align: center;    
   }
 }
+.topmenu {
+  padding-right: 10px;
+}
 .navigation-items {
   margin: 0;  
   ul {
@@ -99,9 +102,10 @@ mat-toolbar {
     position: relative;
     .logo {
       position: absolute;
-      left: 20px;
-      top: -30px;
+      left: 65px;
+      top: 10px;
       z-index: 100;
+      width: 140px;
     }
     .logo-mobile {
       position: absolute;
