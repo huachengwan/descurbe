@@ -28,13 +28,11 @@ import { ItemOfEvent } from '../../../service/item-of-event';
           <div class="title" style="background-color: rgba(250, 123, 10, 0.8);">
             Restaurants
           </div>
-          <img class="img-fluid" src="{{item.image_file}}">
+          <a routerLink="{{item.link}}"><img class="img-fluid" src="{{item.image_file}}"></a>
         </div>
         <div class="col-12 col-lg-5 archiveContent">
           <div class="mainTitle">
-            <h4>
-              {{item.title}} 
-            </h4>
+            <a routerLink="{{item.link}}"><h4>{{item.title}}</h4></a>
             <div class="subTitle">
               of the Hotel Enterprise Inn
             </div>

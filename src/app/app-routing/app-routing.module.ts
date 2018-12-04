@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from '../auth/auth-guard.service';
 import { HomeComponent } from '../home/home.component';
 import { EventComponent } from '../home/event/event.component';
+import { EventDetailComponent } from '../home/event/detail/detail.component';
 import { AttractionComponent } from '../home/attraction/attraction.component';
 import { RestaurantComponent } from '../home/restaurant/restaurant.component';
 import { CafeComponent } from '../home/cafe/cafe.component';
@@ -16,6 +17,9 @@ const routes: Routes = [{
 }, {
   path: 'event',
   component: EventComponent
+}, {
+  path: 'event/:url',
+  component: EventDetailComponent
 }, {
   path: 'attraction',
   component: AttractionComponent

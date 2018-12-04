@@ -24,12 +24,12 @@ export class ArticleService {
 
   getEvents(): ItemOfEvent[] {
     let list = [];
-    list.push(new ItemOfEvent('The lighthouse', 'restaurantes',  'assets/img/descubreleon/agenda/agenda_files/parque-gj_01.jpg', '2x1 buffet breakfast at El Faro restaurant', '2018-09-21', '7:00'));
-    list.push(new ItemOfEvent('The lighthouse', 'restaurantes',  'assets/img/descubreleon/agenda/agenda_files/rest_mariskena-molcajete.jpg', '2x1 buffet breakfast at El Faro restaurant', '2018-09-21', '7:30'));
-    list.push(new ItemOfEvent('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/cafes_01.jpg', '2x1 buffet breakfast at El Faro restaurant', '2018-09-21', '7:40'));
-    list.push(new ItemOfEvent('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/01nov_teatro-ejemplo.jpg', '2x1 buffet breakfast at El Faro restaurant', '2018-09-21', '8:00'));
-    list.push(new ItemOfEvent('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/01nov_musica-ejemplo.jpg', '2x1 buffet breakfast at El Faro restaurant', '2018-09-21', '9:00'));
-    list.push(new ItemOfEvent('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/antros_01.jpg', '2x1 buffet breakfast at El Faro restaurant', '2018-09-21', '12:00'));
+    list.push(new ItemOfEvent('The lighthouse', '/event/item1',  'assets/img/descubreleon/agenda/agenda_files/parque-gj_01.jpg', '2x1 buffet breakfast at El Faro restaurant', '2018-09-21', '7:00'));
+    list.push(new ItemOfEvent('The lighthouse', '/event/item2',  'assets/img/descubreleon/agenda/agenda_files/rest_mariskena-molcajete.jpg', '2x1 buffet breakfast at El Faro restaurant', '2018-09-21', '7:30'));
+    list.push(new ItemOfEvent('ThaiWok Plaza Sevilla', '/event/item3', 'assets/img/descubreleon/agenda/agenda_files/cafes_01.jpg', '2x1 buffet breakfast at El Faro restaurant', '2018-09-21', '7:40'));
+    list.push(new ItemOfEvent('ThaiWok Plaza Sevilla', '/event/item4', 'assets/img/descubreleon/agenda/agenda_files/01nov_teatro-ejemplo.jpg', '2x1 buffet breakfast at El Faro restaurant', '2018-09-21', '8:00'));
+    list.push(new ItemOfEvent('ThaiWok Plaza Sevilla', '/event/item5', 'assets/img/descubreleon/agenda/agenda_files/01nov_musica-ejemplo.jpg', '2x1 buffet breakfast at El Faro restaurant', '2018-09-21', '9:00'));
+    list.push(new ItemOfEvent('ThaiWok Plaza Sevilla', '/event/item6', 'assets/img/descubreleon/agenda/agenda_files/antros_01.jpg', '2x1 buffet breakfast at El Faro restaurant', '2018-09-21', '12:00'));
     return list;
   }
 
