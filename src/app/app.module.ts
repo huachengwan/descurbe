@@ -30,6 +30,8 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './common/header.component';
 import { HeaderMobileComponent } from './common/header-mobile.component';
 import { FooterComponent } from './common/footer.component';
+import { HomeSidebarComponent } from './home/home-sidebar.component';
+
 import { HomeWelcomeimageComponent } from './home/home-welcomeimage.component';
 import { HomeSliderComponent } from './home/home-slider.component';
 import { HomeEventComponent } from './home/home-event.component';
@@ -38,28 +40,32 @@ import { HomeRestaurantComponent } from './home/home-restaurant.component';
 import { HomeBarComponent } from './home/home-bar.component';
 import { HomeMapComponent } from './home/home-map.component';
 import { HomeSubscriptionComponent } from './home/home-subscription.component';
-import { HomeSidebarComponent } from './home/home-sidebar.component';
+
 import { EventComponent } from './home/event/event.component';
-import { AttractionComponent } from './home/attraction/attraction.component';
-import { RestaurantComponent } from './home/restaurant/restaurant.component';
-import { CafeComponent } from './home/cafe/cafe.component';
-import { BarComponent } from './home/bar/bar.component';
-import { HotelComponent } from './home/hotel/hotel.component';
-import { BathComponent } from './home/bath/bath.component';
 import { EventArchiveComponent } from './home/event/archive/archive.component';
 import { EventArchiveItemComponent } from './home/event/archive/item.component';
 import { EventDetailComponent } from './home/event/detail/detail.component';
+import { AttractionComponent } from './home/attraction/attraction.component';
+import { RestaurantComponent } from './home/restaurant/restaurant.component';
+import { RestaurantItemComponent } from './home/restaurant/item.component';
+import { CafeComponent } from './home/cafe/cafe.component';
 import { CafeListComponent } from './home/cafe/list/list.component';
 import { CafeListItemComponent } from './home/cafe/list/item.component';
 import { CafeDetailComponent } from './home/cafe/detail/detail.component';
+import { BarComponent } from './home/bar/bar.component';
+import { HotelComponent } from './home/hotel/hotel.component';
+import { BathComponent } from './home/bath/bath.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+
     HomeComponent,
     HeaderComponent,
     HeaderMobileComponent,
     FooterComponent,
+    HomeSidebarComponent,
+
     HomeWelcomeimageComponent,
     HomeSliderComponent,
     HomeEventComponent,
@@ -68,13 +74,14 @@ import { CafeDetailComponent } from './home/cafe/detail/detail.component';
     HomeBarComponent,
     HomeMapComponent,
     HomeSubscriptionComponent,
-    HomeSidebarComponent,
+
     EventComponent,
     EventArchiveComponent,
     EventArchiveItemComponent,
     EventDetailComponent,
     AttractionComponent,
     RestaurantComponent,
+    RestaurantItemComponent,
     CafeComponent,
     CafeListComponent,
     CafeListItemComponent,
