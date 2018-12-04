@@ -158,7 +158,7 @@ export class HomeEventComponent implements OnInit {
   constructor(
     articleService: ArticleService
   ) {
-    this.items = articleService.getEvent();
+    this.items = articleService.getEvents();
   }
 
   ngOnInit() {

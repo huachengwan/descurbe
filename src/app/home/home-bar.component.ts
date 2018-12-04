@@ -100,7 +100,7 @@ export class HomeBarComponent implements OnInit {
   constructor(
     articleService: ArticleService
   ) {
-    this.items = articleService.getBar();
+    this.items = articleService.getBars();
   }
 
   ngOnInit() {

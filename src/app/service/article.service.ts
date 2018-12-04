@@ -22,7 +22,7 @@ export class ArticleService {
     return list;
   }
 
-  getEvent(): ItemOfEvent[] {
+  getEvents(): ItemOfEvent[] {
     let list = [];
     list.push(new ItemOfEvent('The lighthouse', 'restaurantes',  'assets/img/descubreleon/agenda/agenda_files/parque-gj_01.jpg'));
     list.push(new ItemOfEvent('The lighthouse', 'restaurantes',  'assets/img/descubreleon/agenda/agenda_files/rest_mariskena-molcajete.jpg'));
@@ -42,7 +42,7 @@ export class ArticleService {
     return list;
   }
 
-  getBar(): ItemOfBar[] {
+  getBars(): ItemOfBar[] {
     let list = [];
     list.push(new ItemOfBar('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/vn_barezzito_01.jpg'));
     list.push(new ItemOfBar('The lighthouse', 'restaurantes',  'assets/img/descubreleon/agenda/agenda_files/vn_etnico_01.jpg'));
