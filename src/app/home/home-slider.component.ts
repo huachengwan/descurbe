@@ -2,51 +2,58 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home-slider',
-  template: `
-  <div class="container-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1 class="h1_subt_mainpage">
-            DESTACADO ESTE MES
-          </h1>
-        </div>
-      </div>
-    </div>
-  </div>  
-  <div class="container-fluid" style="background-image: url(&quot;assets/img/descubreleon/inicio_files/inicio-slider_1.jpg&quot;);">
-    <div class="container">
-      <div class="row ">
-          <div class="col text-center px-0">
-          <h1 class="ng-tns-c6-5 ng-trigger ng-trigger-bmaincontainer" style="padding-top: 0px; opacity: 1;">
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">FROM AUSTRIA, THEY VISIT DISCOVERY.MX</font>
-            </font>
-          </h1>
-          <p class="ng-tns-c6-5 ng-trigger ng-trigger-bmaincontainer" style="padding-top: 0px; opacity: 1;">
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">We celebrate 10 years and we celebrate it with our visitors from all over the world</font>
-            </font>
-          </p>
-          <button class="ng-tns-c6-5 ng-trigger ng-trigger-bmaincontainer" style="padding-top: 0px; opacity: 1;">
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">SEE PHOTOS&gt;</font>
-            </font>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div> 
-  `,
+  templateUrl: './home-slider.component.html',
   styles: [`
-  
+    .title{
+      font-size: 3.21em; font-weight: bold;
+    }
+    .jssorl-009-spin img {
+      animation-name: jssorl-009-spin;
+      animation-duration: 1.6s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    @keyframes jssorl-009-spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .jssorb052 .i {position:absolute;cursor:pointer;}
+    .jssorb052 .i .b {fill:#000;fill-opacity:0.3;}
+    .jssorb052 .i:hover .b {fill-opacity:.7;}
+    .jssorb052 .iav .b {fill-opacity: 1;}
+    .jssorb052 .i.idn {opacity:.3;}
+
+    .jssora053 {display:block;position:absolute;cursor:pointer;}
+    .jssora053 .a {fill:none;stroke:#fff;stroke-width:640;stroke-miterlimit:10;}
+    .jssora053:hover {opacity:.8;}
+    .jssora053.jssora053dn {opacity:.5;}
+    .jssora053.jssora053ds {opacity:.3;pointer-events:none;}
   `]
 })
 export class HomeSliderComponent implements OnInit {
+  loadAPI: Promise<any>;
 
-  constructor() { }
+  constructor() {
+    this.loadAPI = new Promise((resolve) => {
+      this.loadScript('../../assets/js/jssor.slider.min.js');
+      this.loadScript('../../assets/js/home-slider.component.js');
+      resolve(true);
+    })
+  }
 
   ngOnInit() {
+  }
+
+  public loadScript(url: string) {
+    const body = <HTMLDivElement> document.body;
+    const script = document.createElement('script');
+    script.innerHTML = '';
+    script.src = url;
+    script.async = false;
+    script.defer = true;
+    body.appendChild(script);
   }
 
 }
