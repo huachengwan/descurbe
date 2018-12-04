@@ -1,0 +1,52 @@
+<div class="item-box">
+  <div class="time-box d-none d-lg-block">
+    <div class="time-t1">
+      From 
+    </div>
+    <div class="time-t2">
+      {{item.time}} 
+    </div>
+    <div class="time-t3">
+      AM.
+    </div>
+  </div>
+  <div class="content-box">
+    <div class="time-box d-block d-lg-none">
+      <span class="timeFrom">
+        From 
+      </span>
+      <span class="timeTime">
+        {{item.time}} 
+      </span>
+      <span class="timeAMPM">
+        AM.
+      </span>
+    </div>
+    <div class="img-wrapper">
+      <div class="title">
+        Restaurants
+      </div>
+      <a routerLink="{{item.link}}"><img class="img-fluid" src="{{item.image_file}}"></a>
+    </div>
+    <div class="right-wrapper">
+      <div class="title">
+        <a routerLink="{{item.link}}">{{item.title}}</a>
+      </div>
+      <div class="subtitle">
+        of the Hotel Enterprise Inn
+      </div>
+      <div class="short_desc">
+        {{item.short_desc}}
+      </div>
+      <div class="text-right">
+        <button class="btn_schedule">
+          <i class="fa fa-calendar"></i>
+          Agendar 
+        </button>
+        <button class="btn_showmore" tabindex="0">
+          Ver más &gt;
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

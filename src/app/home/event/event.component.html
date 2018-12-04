@@ -2,13 +2,28 @@
   <div class="container">
     <div class="row">
       <div class="title-section">
-        <h2>{{currentDate}}</h2>
+        <div class="arrow-buttons">
+          <button mat-icon-button><mat-icon fontSet="fa" fontIcon="fa-angle-left"></mat-icon></button>
+          <button mat-icon-button><mat-icon fontSet="fa" fontIcon="fa-angle-right"></mat-icon></button>
+        </div>
+        <h2 class="current-date">{{currentDate}}</h2>
         <h5>QUÉ HACER HOY EN LEÓN?</h5>
-        <div class="row social">
-          <img alt="FaceBook" src="assets/img/descubreleon/global_files/facebook_new.jpg">
-          <img alt="Twitter" src="assets/img/descubreleon/global_files/twitter_new.jpg">
-          <img alt="whatsapp" src="assets/img/descubreleon/global_files/whatsapp_new.jpg">
-          <img alt="Mail" src="assets/img/descubreleon/global_files/mail_new.jpg">
+        <div class="row social-buttons">
+          <button mat-button class="facebook">
+            <img alt="FaceBook" src="../../../assets/img/facebook_box.png">
+            1.7k
+          </button>
+          <button mat-button class="twitter">
+            <img alt="Twitter" src="../../../assets/img/twitter_box.png">
+          </button>
+          <button mat-button class="whatsapp">
+            <img alt="whatsapp" src="../../../assets/img/whatsapp_box.png">
+            483
+          </button>
+          <button mat-button class="email">
+            <img alt="Mail" src="../../../assets/img/email_box.png">
+            18
+          </button>
         </div>
       </div>
     </div>
