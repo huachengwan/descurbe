@@ -30,7 +30,7 @@ import { ItemOfArticulos } from '../service/item-of-articulos';
         </div>
       </div>
     </div>
-  </div>
+  </div>s
   `,
   styles: [`
   .container-fluid {
@@ -40,6 +40,9 @@ import { ItemOfArticulos } from '../service/item-of-articulos';
   .title {
     font-size: 20px;
     font-family: Oswald;
+  }
+  .img-fluid {
+    width: 100%;
   }
   `]
 })

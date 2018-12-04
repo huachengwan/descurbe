@@ -89,7 +89,7 @@ class Item {
   .img-container .btn_more {
     position: absolute;
     top: calc(50% - 15px);
-    left: calc(50% - 56px);
+    left: calc(50% - 36px);
   }
   .btn_more {
     background-color: rgb(14, 139, 47);
@@ -97,8 +97,10 @@ class Item {
     cursor: pointer;
     font-size: 20px;
     font-family: Oswald;
-    width: 30%; height: 10%;
     border: none;
+  }
+  .img-fluid {
+    width: 100%;
   }
   `]
 })

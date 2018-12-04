@@ -88,8 +88,10 @@ import { ArticleService } from '../service/article.service';
     cursor: pointer;
     font-size: 20px;
     font-family: Oswald;
-    width: 35%; height: 10%;
     border: none;
+  }
+  .img-fluid {
+    width: 100%;
   }
   `]
 })
