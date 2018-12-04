@@ -1,4 +1,4 @@
-export class ItemOfArticulos {
+export class ItemOfArticle {
     public title: string;
     public link: string;
     public image_file: string;

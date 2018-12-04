@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ItemOfRestaurant } from './item-of-restaurant'
 import { ItemOfQue } from './item-of-que'
-import { ItemOfArticulos } from './item-of-articulos';
+import { ItemOfArticle } from './item-of-article';
 import { ItemOfAntros } from './item-of-antros';
 
 
@@ -33,12 +33,12 @@ export class ArticleService {
     return list;
   }
 
-  getArticulos(): ItemOfArticulos[] {
+  getArticles(): ItemOfArticle[] {
     let list = [];
-    list.push(new ItemOfQue('Cumplimos 10 anos y io celebramos por todo dlmundo', 'restaurantes',  'assets/img/descubreleon/articulos/2018/10aniv_01_med.jpg'));
-    list.push(new ItemOfQue('Cumplimos 10 anos y io celebramos por todo dlmundo', 'restaurantes',  'assets/img/descubreleon/articulos/2018/02_med.jpg'));
-    list.push(new ItemOfQue('Cumplimos 10 anos y io celebramos por todo dlmundo', 'restaurantes', 'assets/img/descubreleon/articulos/2018/03_med.jpg'));
-    list.push(new ItemOfQue('Cumplimos 10 anos y io celebramos por todo dlmundo', 'restaurantes', 'assets/img/descubreleon/articulos/2018/04_med.jpg'));
+    list.push(new ItemOfArticle('Cumplimos 10 anos y io celebramos por todo dlmundo', 'restaurantes',  'assets/img/descubreleon/articulos/2018/10aniv_01_med.jpg'));
+    list.push(new ItemOfArticle('Cumplimos 10 anos y io celebramos por todo dlmundo', 'restaurantes',  'assets/img/descubreleon/articulos/2018/02_med.jpg'));
+    list.push(new ItemOfArticle('Cumplimos 10 anos y io celebramos por todo dlmundo', 'restaurantes', 'assets/img/descubreleon/articulos/2018/03_med.jpg'));
+    list.push(new ItemOfArticle('Cumplimos 10 anos y io celebramos por todo dlmundo', 'restaurantes', 'assets/img/descubreleon/articulos/2018/04_med.jpg'));
     return list;
   }
 

@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ArticleService } from '../service/article.service';
-import { ItemOfArticulos } from '../service/item-of-articulos';
+import { ItemOfArticle } from '../service/item-of-article';
 
 
 @Component({
-  selector: 'app-home-articulos',
+  selector: 'app-home-article',
   template: `
   <div class="container-fluid">
     <div class="container">
@@ -46,13 +46,13 @@ import { ItemOfArticulos } from '../service/item-of-articulos';
   }
   `]
 })
-export class HomeArticulosComponent implements OnInit {
-  items: ItemOfArticulos[];
+export class HomeArticleComponent implements OnInit {
+  items: ItemOfArticle[];
 
   constructor(
     articleService: ArticleService
   ) { 
-    this.items = articleService.getArticulos();
+    this.items = articleService.getArticles();
   }
 
   ngOnInit() {

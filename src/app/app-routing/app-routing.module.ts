@@ -11,6 +11,9 @@ const routes: Routes = [{
   path: 'event',
   component: EventComponent
 }, {
+  path: 'attraction',
+  component: EventComponent
+}, {
   path: 'auth',
   loadChildren: 'app/auth/auth.module#AuthModule'
 }, {
