@@ -9,7 +9,7 @@ export class EventComponent implements OnInit {
 
   constructor() { }
 
-  currentDate = 'asdasd';
+  currentDate = 'Jueves 1 Noveiembre 2019';
 
   ngOnInit() {
   }
