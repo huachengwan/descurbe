@@ -1,0 +1,24 @@
+.container-fluid {
+  background-color: #fff;
+  &.background-image {
+    background-image: url('../../../assets/img/event/portada_01.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }  
+  .title-section {
+    margin-left: 150px;
+    margin-top: 300px;
+    width: calc(100% - 480px);
+    background-color: #fff;
+    height: 200px;
+  }
+  .archive-section {
+    width: calc(100% - 320px);
+    float: left;
+  }
+  .sidebar {
+    width: 320px;
+    float: right;
+  }
+}
