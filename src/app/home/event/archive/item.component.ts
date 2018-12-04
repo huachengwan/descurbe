@@ -4,7 +4,7 @@ import { ItemOfEvent } from '../../../service/item-of-event';
 @Component({
   selector: 'app-event-archive-item',
   template: `
-    <div>
+    <div class="itemComponet">
       <div class="row box">
         <div class="d-none d-lg-block col-lg-2">
           <div class="timebox">
@@ -53,6 +53,7 @@ import { ItemOfEvent } from '../../../service/item-of-event';
           </div>
         </div>
       </div>
+      <div>
     </div>
 
   `,
@@ -60,6 +61,7 @@ import { ItemOfEvent } from '../../../service/item-of-event';
   .timebox {
     padding: 5%;
     background-color: rgb(233, 233, 233);
+    margin-right: 18%;
   }
   .timeTime {
     font-size: 30px;
@@ -69,6 +71,7 @@ import { ItemOfEvent } from '../../../service/item-of-event';
   .timeFrom {
     font-size: 13px;
     display: block;
+    color: rgb(184, 184, 184); 
   }
   .timeAMPM {
     font-size: 13px;
@@ -89,7 +92,7 @@ import { ItemOfEvent } from '../../../service/item-of-event';
     padding: 3%;
   }
   .content {
-    height: 40%;
+    height: 50%;
     overflow: hidden;
   }
   .archiveContent {
@@ -101,6 +104,9 @@ import { ItemOfEvent } from '../../../service/item-of-event';
     padding-right:5%; padding-left:5%; padding-top: 2%;padding-bottom: 2%;
     margin-right: 2%;
     color: rgb(255, 255, 255);
+  }
+  .itemComponet {
+    margin-right:4%;
   }
   `]
 })

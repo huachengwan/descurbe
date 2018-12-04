@@ -6,6 +6,9 @@
     background-position: 50% 0;
     background-size: cover;
   }  
+  img {
+    padding-right: 1%;
+  }
   .title-section {
     margin-left: 150px;
     margin-top: 300px;
@@ -13,6 +16,7 @@
     background-color: #fff;
     height: 200px;
     padding: 30px;
+    min-width: 400px;
     h2{
       font-size: 50px;
       font-family: Oswald;
