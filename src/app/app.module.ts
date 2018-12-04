@@ -31,6 +31,7 @@ import { HeaderComponent } from './common/header.component';
 import { HeaderMobileComponent } from './common/header-mobile.component';
 import { FooterComponent } from './common/footer.component';
 import { HomeSidebarComponent } from './home/home-sidebar.component';
+import { CalendarComponent } from './common/calendar.component';
 
 import { HomeWelcomeimageComponent } from './home/home-welcomeimage.component';
 import { HomeSliderComponent } from './home/home-slider.component';
@@ -65,6 +66,7 @@ import { BathComponent } from './home/bath/bath.component';
     HeaderMobileComponent,
     FooterComponent,
     HomeSidebarComponent,
+    CalendarComponent,
 
     HomeWelcomeimageComponent,
     HomeSliderComponent,
@@ -88,7 +90,7 @@ import { BathComponent } from './home/bath/bath.component';
     CafeDetailComponent,
     BarComponent,
     HotelComponent,
-    BathComponent,
+    BathComponent,    
   ],
   imports: [
     BrowserModule,
