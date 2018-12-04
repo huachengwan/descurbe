@@ -17,7 +17,7 @@ import { ItemOfQue } from '../service/item-of-que';
         </div>
       </div>
       <div class="row">
-        <div class="button col-md-3">
+        <div class="button col-3">
           <button class="btn_previous d-block d-md-none">
             <font style="vertical-align: inherit;">
               <font style="vertical-align: inherit;">&gt;</font>
@@ -29,12 +29,12 @@ import { ItemOfQue } from '../service/item-of-que';
             </font>
           </button>
         </div>
-        <div class="col-md-6 date">
+        <div class="col-6 date">
           <font style="vertical-align: inherit;">
             <font style="vertical-align: inherit;">Viernes 19 de Enero de 2019</font>
           </font>
         </div>
-        <div class="button col-md-3 ">
+        <div class="button col-3 ">
           <button class="btn_next d-block d-md-none">
             <font style="vertical-align: inherit;">
               <font style="vertical-align: inherit;">&gt;</font>
@@ -129,8 +129,10 @@ import { ItemOfQue } from '../service/item-of-que';
     cursor: pointer;
     font-size: 20px;
     font-family: Oswald;
-    width: 30%; height: 10%;
     border: none;
+  }
+  .img-fluid {
+    width: 100%;
   }
   `]
 })
