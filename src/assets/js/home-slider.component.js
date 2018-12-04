@@ -28,11 +28,9 @@ jssor_1_slider_init = function() {
   function ScaleSlider() {  
     var containerElement = jssor_1_slider.$Elmt.parentNode;
     var containerWidth = containerElement.clientWidth;
-    console.log(containerWidth);
     if (containerWidth) {
       var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
       jssor_1_slider.$ScaleWidth(expectedWidth);
-      console.log(expectedWidth);
     }
     else {
       window.setTimeout(ScaleSlider, 30);

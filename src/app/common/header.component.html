@@ -42,16 +42,20 @@
 </mat-toolbar>
 <div class="header-section">
   <div class="container">
-    <img class="logo d-none d-md-block" src="assets/img/logo_descubreleon.png"/>
-    <div class="search-bar d-none d-md-block">
-      <form>
-        <input type="text" class="form-control" placeholder="Buscar" [(ngModel)]="searchWord" [ngModelOptions]="{standalone: true}"/>
-        <button class="search-btn" (click)="search()">
-          <mat-icon fontSet="fa" fontIcon="fa-search"></mat-icon>
-        </button>
-      </form>
+    <div class="row">
+      <div class="col">
+        <img class="logo d-none d-md-block" src="assets/img/logo_descubreleon.png"/>
+        <div class="search-bar d-none d-md-block">
+          <form>
+            <input type="text" class="form-control" placeholder="Buscar" [(ngModel)]="searchWord" [ngModelOptions]="{standalone: true}"/>
+            <button class="search-btn" (click)="search()">
+              <mat-icon fontSet="fa" fontIcon="fa-search"></mat-icon>
+            </button>
+          </form>
+        </div>
+        <img class="logo-mobile d-md-none" src="assets/img/logo_descubreleon.png"/>
+      </div>
     </div>
-    <img class="logo-mobile d-md-none" src="assets/img/logo_descubreleon.png"/>
   </div>  
   <div class="background-carousel">
     <div class="image"></div>
@@ -63,14 +67,14 @@
 <div id="main-menu" class="main-menu animated fadeInDown">
   <div class="container">
     <div class="menu-btn-group">
-      <button mat-button routerLink="/" routerLinkActive="active">INICIO</button>
+      <button mat-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">INICIO</button>
       <button mat-button routerLink="/event" routerLinkActive="active">EVENTOS</button>
-      <button mat-button><span>ATRACCIONES</span></button>
-      <button mat-button>RESTAURANTES</button>
-      <button mat-button>CAFÉS</button>
-      <button mat-button>BARES</button>
-      <button mat-button>HOTELES</button>
-      <button mat-button>SPAS</button>
+      <button mat-button routerLink="/event" routerLinkActive="active">ATRACCIONES</button>
+      <button mat-button routerLink="/event" routerLinkActive="active">RESTAURANTES</button>
+      <button mat-button routerLink="/event" routerLinkActive="active">CAFÉS</button>
+      <button mat-button routerLink="/event" routerLinkActive="active">BARES</button>
+      <button mat-button routerLink="/event" routerLinkActive="active">HOTELES</button>
+      <button mat-button routerLink="/event" routerLinkActive="active">SPAS</button>
     </div>
   </div>
 </div>
