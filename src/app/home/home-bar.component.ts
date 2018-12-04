@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ItemOfBar } from '../service/item-of-bar';
 import { ArticleService } from '../service/article.service';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-home-bar',
@@ -22,17 +23,15 @@ import { ArticleService } from '../service/article.service';
         </div>
       </div>
       <div class="row">
-        <div *ngFor="let item of items" class="col-md-4 card-image ng-star-inserted">
-          <div class="img-container px-0" tabindex="0">
+        <div *ngFor="let item of items; let i=index" class="col-md-4 card-image ng-star-inserted">
+          <div class="img-container px-0" tabindex="0" (mouseenter)="showMoreBtn(i)" (mouseleave)="hideMoreBtn(i)">
             <div class="title">
               <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;">{{item.title}}</font>
               </font>
             </div>
-            <button class="btn_more" tabindex="0">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">See more&gt;</font>
-              </font>
+            <button class="btn_more" routerlink="/agenda" tabindex="0" [@moreBtn]="i==itemIndex?btnStatus:'hide'">
+              Ver más&nbsp;&gt;
             </button>
             <img class="img-fluid" src="{{item.image_file}}">
           </div>
@@ -92,7 +91,25 @@ import { ArticleService } from '../service/article.service';
   .img-fluid {
     width: 100%;
   }
-  `]
+  `],
+  animations: [
+    trigger('moreBtn', [
+      state('show', style({
+        top: 'calc(50% - 15px)',
+        opacity: 1
+      })),
+      state('hide', style({
+        top: '100%',
+        opacity: 0
+      })),
+      transition('hide => show', [
+        animate('0.3s')
+      ]),
+      transition('show => hide', [
+        animate('0.2s')
+      ])
+    ])
+  ]
 })
 export class HomeBarComponent implements OnInit {
   items: ItemOfBar[];
@@ -105,5 +122,17 @@ export class HomeBarComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  itemIndex = -1;
+  btnStatus = 'hide';  
+  showMoreBtn(index) {
+    this.itemIndex = index;
+    console.log(index);    
+    this.btnStatus = 'show';
+  }
 
+  hideMoreBtn(index) {
+    this.itemIndex = index;
+    this.btnStatus = 'hide';
+  }
 }
