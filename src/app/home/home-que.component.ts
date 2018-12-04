@@ -122,6 +122,7 @@ import { ItemOfQue } from '../service/item-of-que';
     font-size: 20px;
     font-family: Oswald;
     width: 100%; height:100%;
+    margin-bottom: 1%;
   }
   .btn_more {
     background-color: rgb(14, 139, 47);
