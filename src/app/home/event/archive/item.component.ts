@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ItemOfEvent } from '../../../service/item-of-event';
 
 @Component({
   selector: 'app-event-archive-item',
@@ -11,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
               From 
             </span>
             <span class="timeTime">
-              7:00 
+              {{item.time}} 
             </span>
             <span class="timeAMPM">
               AM.
@@ -25,14 +26,14 @@ import { Component, OnInit } from '@angular/core';
         </div>
         <div class="col-12 col-lg-5 img-container px-0">
           <div class="title" style="background-color: rgba(250, 123, 10, 0.8);">
-              Restaurants
+            Restaurants
           </div>
-          <img class="img-fluid" src="assets/img/descubreleon/agenda/noviembre_files/nov01_altar.jpg">
+          <img class="img-fluid" src="{{item.image_file}}">
         </div>
         <div class="col-12 col-lg-5 archiveContent">
           <div class="mainTitle">
             <h4>
-              2x1 buffet breakfast at El Faro restaurant
+              {{item.title}} 
             </h4>
             <div class="subTitle">
               of the Hotel Enterprise Inn
@@ -40,13 +41,12 @@ import { Component, OnInit } from '@angular/core';
           </div>
           <div class="content">
             <div class="">
-              Do not forget to try their delicious bread fresh out of the oven
+              {{item.short_desc}}
             </div>
           </div>
           <div class="ctcc_3 text-right">
             <button class="btn_schedule">
-              <i class="fa fa-calendar">
-              </i>
+              <i class="fa fa-calendar"></i>
               Schedule
             </button>
             <button class="btn_seeall" tabindex="0">
@@ -109,6 +109,8 @@ import { Component, OnInit } from '@angular/core';
 export class EventArchiveItemComponent implements OnInit {
 
   constructor() { }
+
+  @Input() item: ItemOfEvent;
 
   ngOnInit() {
   }

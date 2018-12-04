@@ -1,1 +1,5 @@
-<app-event-archive-item></app-event-archive-item>
+<div class="archive-section">
+  <div class="item" *ngFor="let item of items">
+    <app-event-archive-item [item]="item"></app-event-archive-item>
+  </div>
+</div>
