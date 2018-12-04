@@ -28,14 +28,15 @@ import { Component, OnInit } from '@angular/core';
     }
     .welcome-text h4 {
       margin-top: 70px;
-      font-size: 3.21em; font-weight: bold;
+      font-size: 40px; font-weight: bold;
     }
     .welcome-text p span.desc {
-      font-size: 2.28em; line-height: 1.2em;
+      font-size: 20px; line-height: 1.2em;
     }
     .welcome-text .btn {
-      font-size: 2.28em; color: #fff; font-weight: bold;
+      font-size: 16px; color: #fff; font-weight: bold;
       background-color: #0e8b2f;
+      border: 0;
     }
     @media (max-width: 1023.98px) {
       .container-fluid {

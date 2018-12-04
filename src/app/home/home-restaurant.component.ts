@@ -66,7 +66,7 @@ class Item {
     margin-top: 10px;
     cursor: pointer;
     color: rgb(255, 255, 255);
-    font-size: 32.44px;
+    font-size: 20px;
     font-family: Oswald;
     float: right;
   }
@@ -94,7 +94,7 @@ class Item {
     background-color: rgb(14, 139, 47);
     color: rgb(255, 255, 255);
     cursor: pointer;
-    font-size: 32px;
+    font-size: 20px;
     font-family: Oswald;
     border: none;
   }
