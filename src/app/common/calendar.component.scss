@@ -1,41 +1,47 @@
 $dayBase: 36px;
 
-$cloud:'#ccc';
+$cloud: #ccc;
 $base:5px;
-$concrete:'#fff';
-$seafoam:'blue';
-$white:'#fff';
-$teal:'black';
-$light-blue-grey:'#888';
+$concrete: #fff;
+$seafoam: blue ;
+$white: #fff;
+$teal: black;
+$light-blue-grey: #888;
 
 .calendar {
   display: block;
-  width: $dayBase * 7 + 30px;
-  padding: 15px;
-  margin: 30px auto 10px auto;
-  background: url(../../assets/img/agenda-leones-m.jpg) no-repeat 50% 0 #e9e9e9; ;
+  width: $dayBase * 7;
 
   * {
     box-sizing: border-box;
   }
-
-  .title {
-    padding: 10px 0 40px 0;
-    h4 {
-      font-size: 2.3em;
-      color: #fff;
-    }
-  }
-
-  .calendar-navs {
-    background-color: $cloud;
-  }
-
   .month-nav {
     padding: $base;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    button {
+      background: transparent no-repeat;
+      border: 0 none;
+      width: 40px; height: 40px;
+      cursor: pointer;
+      &.prev-btn {
+        background-image: url('../../assets/img/flecha-izq_ch_1.png');
+        &:hover {
+          background-image: url('../../assets/img/flecha-izq_ch_2.png');
+        }
+      }
+      &.next-btn {
+        background-image: url('../../assets/img/flecha-der_ch_1.png');
+        &:hover {
+          background-image: url('../../assets/img/flecha-der_ch_2.png');
+        }
+      }
+    }
+    span {
+      font-size: 1.5em; color: #fff;
+      margin-top: 6px; margin-bottom: 22px;
+    }
   }
 
   .year-nav {
@@ -48,11 +54,9 @@ $light-blue-grey:'#888';
 
   .month-grid {
     .day-names {
-      display: flex;
-      flex-direction: row;
+      display: flex; flex-direction: row;
       background: $concrete;
-      border-bottom-right-radius: 3px;
-      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;
     }
     .weeks {
       display: flex;
@@ -62,15 +66,16 @@ $light-blue-grey:'#888';
       display: flex;
       flex-direction: row;
     }
+    .day-name {
+      font-weight: bold;
+    }
     .week-date,
     .day-name {
       text-align: center;
-      padding: $base;
       display: block;
       width: $dayBase;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      padding: $base;
+      display: flex; justify-content: center; align-items: center;      
     }
 
     .week-date {
@@ -80,7 +85,6 @@ $light-blue-grey:'#888';
       .date-text {
         z-index: 10;
         font-size: 14px;
-        font-family: 'Montserrat', sans-serif;
       }
 
       &::after {
@@ -88,7 +92,6 @@ $light-blue-grey:'#888';
         height: $dayBase * 0.9; width: $dayBase * 0.9;
         position: absolute;
         top: 50%; left: 50%;
-        border-radius: 50%;
         z-index: 1;
         transform: translate(-50%, -50%);
         transition: background-color 150ms linear, color 150ms linear;
@@ -97,8 +100,9 @@ $light-blue-grey:'#888';
       &.enabled {
         cursor: pointer;
         &:hover {
+          color: #fff;
           &:after {
-            background-color: $seafoam;
+            background-color: #079030;
           }
         }
       }
@@ -121,6 +125,7 @@ $light-blue-grey:'#888';
 
     .today {
       font-weight: bold;
+      background-color: #dbdbdb;
     }
   }
 } 

@@ -1,12 +1,9 @@
 <div class="calendar">
-  <div class="calendar-navs">
-    <div class="title">
-      <h4>Agenda de Eventos</h4>
-    </div>
+  <div class="calendar-navs">    
     <div class="month-nav">
-      <button (click)="prevMonth()">&lt;</button>
-      <span>{{ currentDate.format('MMMM') }} {{ currentDate.format('YYYY') }}</span>
-      <button (click)="nextMonth()">&gt;</button>
+      <button (click)="prevMonth()" class="prev-btn"></button>
+      <span style="text-transform: uppercase">{{ currentDate.locale('es').format('MMMM') }} {{ currentDate.format('YYYY') }}</span>
+      <button (click)="nextMonth()" class="next-btn"></button>
     </div>
   </div>
   <div class="month-grid">
@@ -30,5 +27,5 @@
         </ng-container>
       </div>
     </div>
-  </div>
+  </div>  
 </div>

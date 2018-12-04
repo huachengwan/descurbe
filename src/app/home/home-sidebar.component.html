@@ -1,3 +1,31 @@
-<div class="">
+<div class="calendar-section">
+  <div class="title">
+    <h4>Agenda de Eventos</h4>
+  </div>
   <broklin-calendar></broklin-calendar>
+  <div class="events">
+    <button class="show-all-events">Mis eventos&nbsp;&gt;</button>
+  </div>
+</div>
+<div class="banner-section">
+  <img src="../../assets/img/others/anuncio_adsense-1.jpg"/>
+</div>
+<div class="article-section">
+  <div class="section-title">
+    Articulos
+  </div>
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let item of articles" class="col-6 card-item">
+        <div class="img-container px-0" tabindex="0">
+          <img class="img-fluid" src="{{item.image_file}}">
+        </div>
+        <div>
+          <a class="title" routerLink="/">
+            {{item.title}}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

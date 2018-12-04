@@ -22,7 +22,9 @@ export class CalendarComponent implements OnInit {
   @Input() selectedDates: CalendarDate[] = [];
   @Output() onSelectDate = new EventEmitter<CalendarDate>();
 
-  constructor() { }
+  constructor() { 
+    moment.locale('es');
+  }
 
   ngOnInit() {
     this.generateCalendar();
