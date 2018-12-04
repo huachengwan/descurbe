@@ -32,10 +32,10 @@ import { HeaderMobileComponent } from './common/header-mobile.component';
 import { FooterComponent } from './common/footer.component';
 import { HomeWelcomeimageComponent } from './home/home-welcomeimage.component';
 import { HomeSliderComponent } from './home/home-slider.component';
-import { HomeQueComponent } from './home/home-que.component';
+import { HomeEventComponent } from './home/home-event.component';
 import { HomeArticleComponent } from './home/home-article.component';
 import { HomeRestaurantComponent } from './home/home-restaurant.component';
-import { HomeAntrosComponent } from './home/home-antros.component';
+import { HomeBarComponent } from './home/home-bar.component';
 import { HomeMapComponent } from './home/home-map.component';
 import { HomeSubscriptionComponent } from './home/home-subscription.component';
 import { HomeSidebarComponent } from './home/home-sidebar.component';
@@ -62,10 +62,10 @@ import { CafeDetailComponent } from './home/cafe/detail/detail.component';
     FooterComponent,
     HomeWelcomeimageComponent,
     HomeSliderComponent,
-    HomeQueComponent,
+    HomeEventComponent,
     HomeArticleComponent,
     HomeRestaurantComponent,
-    HomeAntrosComponent,
+    HomeBarComponent,
     HomeMapComponent,
     HomeSubscriptionComponent,
     HomeSidebarComponent,
