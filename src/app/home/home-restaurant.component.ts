@@ -140,7 +140,6 @@ export class HomeRestaurantComponent implements OnInit {
   btnStatus = 'hide';  
   showMoreBtn(index) {
     this.itemIndex = index;
-    console.log(index);    
     this.btnStatus = 'show';
   }
 
