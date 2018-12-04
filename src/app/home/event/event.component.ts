@@ -9,6 +9,8 @@ export class EventComponent implements OnInit {
 
   constructor() { }
 
+  currentDate = 'asdasd';
+
   ngOnInit() {
   }
 
