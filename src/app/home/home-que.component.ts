@@ -49,7 +49,7 @@ import { ItemOfQue } from '../service/item-of-que';
       </div>
       <div class="row">
         <div *ngFor="let item of items" class="col-md-4 card-image">
-          <div class="img-container px-0" routerlink="/agenda" tabindex="0">
+          <div class="img-container" routerlink="/agenda" tabindex="0">
             <div class="title">
               <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;">{{item.title}}</font>
@@ -85,8 +85,8 @@ import { ItemOfQue } from '../service/item-of-que';
   }
   .img-container .btn_more {
     position: absolute;
-    top: calc(50% - 30px);
-    left: calc(50% - 12px);
+    top: calc(50% - 15px);
+    left: calc(50% - 56px);
   }
   .btn_next {
     background-color: rgb(232, 234, 233);
@@ -122,6 +122,15 @@ import { ItemOfQue } from '../service/item-of-que';
     font-size: 20px;
     font-family: Oswald;
     width: 100%; height:100%;
+  }
+  .btn_more {
+    background-color: rgb(14, 139, 47);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Oswald;
+    width: 30%; height: 10%;
+    border: none;
   }
   `]
 })

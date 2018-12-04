@@ -5,7 +5,7 @@ import { ArticleService } from '../service/article.service';
 @Component({
   selector: 'app-home-antros',
   template: `
-  <div class="container-fluid px-0 pb-5">
+  <div class="container-fluid">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -79,8 +79,17 @@ import { ArticleService } from '../service/article.service';
   }
   .img-container .btn_more {
     position: absolute;
-    top: calc(50% - 30px);
-    left: calc(50% - 12px);
+    top: calc(50% - 15px);
+    left: calc(50% - 56px);
+  }
+  .btn_more {
+    background-color: rgb(14, 139, 47);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Oswald;
+    width: 35%; height: 10%;
+    border: none;
   }
   `]
 })

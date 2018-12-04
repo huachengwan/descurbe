@@ -10,7 +10,7 @@ class Item {
 @Component({
   selector: 'app-home-restaurant',
   template: `
-  <div class="container-fluid px-0 pb-5">
+  <div class="container-fluid">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -28,7 +28,7 @@ class Item {
       </div>
       <div class="row">
         <div *ngFor="let item of items" class="col-md-4 card-image ng-star-inserted">
-          <div class="img-container px-0" tabindex="0">
+          <div class="img-container" tabindex="0">
             <div class="title">
               <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;">{{item.title}}</font>
@@ -53,6 +53,7 @@ class Item {
   }
   .card-image {
     padding-bottom: 3%;
+    width: 100%;
   }
   .title {
     color: rgb(255, 255, 255);
@@ -77,6 +78,7 @@ class Item {
   }
   .img-container {
     position: relative;
+    width: 100%;
   }
   .img-container .title {
     position: absolute;
@@ -86,8 +88,17 @@ class Item {
   }
   .img-container .btn_more {
     position: absolute;
-    top: calc(50% - 30px);
-    left: calc(50% - 12px);
+    top: calc(50% - 15px);
+    left: calc(50% - 56px);
+  }
+  .btn_more {
+    background-color: rgb(14, 139, 47);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Oswald;
+    width: 30%; height: 10%;
+    border: none;
   }
   `]
 })

@@ -23,7 +23,7 @@ import { ItemOfArticulos } from '../service/item-of-articulos';
             <img class="img-fluid" src="{{item.image_file}}">
           </div>
           <div>
-            <p>
+            <p class="title">
               {{item.title}}
             </p>
           </div>
@@ -36,6 +36,10 @@ import { ItemOfArticulos } from '../service/item-of-articulos';
   .container-fluid {
     background: rgb(232, 233, 233);
     padding-left: 8%; padding-right:8%; padding-top:2%;
+  }
+  .title {
+    font-size: 20px;
+    font-family: Oswald;
   }
   `]
 })
