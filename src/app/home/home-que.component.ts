@@ -8,7 +8,7 @@ import { ItemOfQue } from '../service/item-of-que';
   <div class="container-fluid">
     <div class="container">
       <div class="row">
-        <div class=" topic">
+        <div class="topic">
           <h1 class="">
             <font style="vertical-align: inherit;">
               <font style="vertical-align: inherit;">QUÉ HACER HOY EN LEÓN?</font>
@@ -57,7 +57,7 @@ import { ItemOfQue } from '../service/item-of-que';
             </div>
             <button class="btn_more" routerlink="/agenda" tabindex="0">
               <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">See more&gt;</font>
+                <font style="vertical-align: inherit;">Ver más&gt;</font>
               </font>
             </button>
             <img class="img-fluid" src="{{item.image_file}}">
@@ -92,7 +92,7 @@ import { ItemOfQue } from '../service/item-of-que';
     background-color: rgb(232, 234, 233);
     cursor: pointer;
     display: block;
-    font-size: 20px;
+    font-size: 32px;
     font-family: Oswald;
     width: 100%; height:100%;
     border: none;
@@ -104,7 +104,7 @@ import { ItemOfQue } from '../service/item-of-que';
     background-color: rgb(232, 234, 233);
     cursor: pointer;
     display: block;
-    font-size: 20px;
+    font-size: 32px;
     font-family: Oswald;
     width: 100%; height:100%;
     border: none;
@@ -119,7 +119,7 @@ import { ItemOfQue } from '../service/item-of-que';
     background-color: rgb(232, 234, 233);
     text-align: center;
     display: block;
-    font-size: 20px;
+    font-size: 32px;
     font-family: Oswald;
     width: 100%; height:100%;
     margin-bottom: 1%;
@@ -128,7 +128,7 @@ import { ItemOfQue } from '../service/item-of-que';
     background-color: rgb(14, 139, 47);
     color: rgb(255, 255, 255);
     cursor: pointer;
-    font-size: 20px;
+    font-size: 32px;
     font-family: Oswald;
     border: none;
   }
@@ -150,3 +150,5 @@ export class HomeQueComponent implements OnInit {
   }
 
 }
+
+

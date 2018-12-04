@@ -57,6 +57,8 @@ import { Component, OnInit } from '@angular/core';
     }
     .container {
       width: 40%;
+      margin-top: 2%;
+      margin-bottom: 2%;
     }
   `]
 })

@@ -15,7 +15,7 @@ import { ArticleService } from '../service/article.service';
             </font>
             <button class="btn_seeAll">
               <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">See All&gt;</font>
+                <font style="vertical-align: inherit;">Siguiente&gt;</font>
               </font>
             </button>
           </h1>
@@ -61,11 +61,10 @@ import { ArticleService } from '../service/article.service';
     background-color: rgb(0, 0, 0);
     border: 0;
     margin-top:10px;
-    width: 20%; height: 30px;
     cursor: pointer;
     float: right;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 32px;
     font-family: Oswald;
   }
   .btn_seeAll:hover {
@@ -86,7 +85,7 @@ import { ArticleService } from '../service/article.service';
     background-color: rgb(14, 139, 47);
     color: rgb(255, 255, 255);
     cursor: pointer;
-    font-size: 20px;
+    font-size: 32px;
     font-family: Oswald;
     border: none;
   }

@@ -20,7 +20,7 @@ class Item {
             </font>
             <button class="btn_seeAll">
               <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">See All&gt;</font>
+                <font style="vertical-align: inherit;">Siguiente&gt;</font>
               </font>
             </button>
           </h1>
@@ -36,7 +36,7 @@ class Item {
             </div>
             <button class="btn_more" tabindex="0">
               <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">See more&gt;</font>
+                <font style="vertical-align: inherit;">Ver más&gt;</font>
               </font>
             </button>
             <img class="img-fluid" src="{{item.image_file}}">
@@ -57,7 +57,7 @@ class Item {
   }
   .title {
     color: rgb(255, 255, 255);
-    font-size: 40px;
+    font-size: 45px;
     font-family: Oswald;
   }
   .btn_seeAll {
@@ -65,9 +65,8 @@ class Item {
     border: 0;
     margin-top: 10px;
     cursor: pointer;
-    width: 20%; height: 30px;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 32.44px;
     font-family: Oswald;
     float: right;
   }
@@ -95,7 +94,7 @@ class Item {
     background-color: rgb(14, 139, 47);
     color: rgb(255, 255, 255);
     cursor: pointer;
-    font-size: 20px;
+    font-size: 32px;
     font-family: Oswald;
     border: none;
   }
