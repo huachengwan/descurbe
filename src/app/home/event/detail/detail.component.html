@@ -6,7 +6,7 @@
           <button mat-icon-button routerLink="/event"><mat-icon fontSet="fa" fontIcon="fa-times"></mat-icon></button>
         </div>
         <h2 class="title">{{itemData.title}}</h2>
-        <h5>Con Odiseo Bichir y Benjamin Rivero</h5>
+        <h5>{{itemData.subtitle}}</h5>
         <div class="row social-buttons">
           <button mat-button class="facebook">
             <img alt="FaceBook" src="assets/img/facebook_box.png">
@@ -42,6 +42,7 @@
             </p>
           </div>
           <div class="content-box">
+            <img *ngIf="itemData.desc_image_path" class="desc_image" src="{{itemData.desc_image_path}}"/>
             {{itemData.desc}}
           </div>
           <div class="content-box hotnews-box">

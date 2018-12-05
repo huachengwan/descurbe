@@ -11,8 +11,10 @@ export class ItemOfEvent {
   public time: string;
   public apm: string;
   public category: string;
-  public category_color; string;
+  public category_color: string;
   public desc_html_file: string;
+  public desc_image_path: string;
+  public desc: string;
   constructor() {
     
   }

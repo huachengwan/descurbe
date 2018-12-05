@@ -68,6 +68,8 @@ export class ArticleService {
         item_.category = item.category;
         item_.category_color = item.category_color;
         item_.desc_html_file = item.desc_html_file;
+        item_.desc = item.desc;
+        item_.desc_image_path = item.desc_image_path;
         list.push(item_);
       }
     })
@@ -98,6 +100,8 @@ export class ArticleService {
           current_item.category = item.category;
           current_item.category_color = item.category_color;
           current_item.desc_html_file = item.desc_html_file;
+          current_item.desc = item.desc;
+          current_item.desc_image_path = item.desc_image_path;
         }
       }
     })
