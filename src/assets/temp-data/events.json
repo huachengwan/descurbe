@@ -1,0 +1,49 @@
+[{
+  "title": "The lighthouse",
+  "link": "/event/item1",
+  "image_file": "assets/img/descubreleon/agenda/agenda_files/parque-gj_01.jpg",
+  "short_desc": "2x1 buffet breakfast at El Faro restaurant",
+  "date": "2018-09-21",
+  "time": "7:00",
+  "desc_html_file": "event-desc-1.htm"
+},{
+  "title": "The lighthouse",
+  "link": "/event/item2",
+  "image_file": "assets/img/descubreleon/agenda/agenda_files/rest_mariskena-molcajete.jpg",
+  "short_desc": "2x1 buffet breakfast at El Faro restaurant",
+  "date": "2018-09-21",
+  "time": "7:30",
+  "desc_html_file": "event-desc-1.htm"
+},{
+  "title": "ThaiWok Plaza Sevilla",
+  "link": "/event/item3",
+  "image_file": "assets/img/descubreleon/agenda/agenda_files/cafes_01.jpg",
+  "short_desc": "2x1 buffet breakfast at El Faro restaurant",
+  "date": "2018-09-21",
+  "time": "7:40",
+  "desc_html_file": "event-desc-1.htm"
+},{
+  "title": "ThaiWok Plaza Sevilla",
+  "link": "/event/item4",
+  "image_file": "assets/img/descubreleon/agenda/agenda_files/01nov_teatro-ejemplo.jpg",
+  "short_desc": "2x1 buffet breakfast at El Faro restaurant",
+  "date": "2018-09-21",
+  "time": "8:40",
+  "desc_html_file": "event-desc-1.htm"
+},{
+  "title": "ThaiWok Plaza Sevilla",
+  "link": "/event/item5",
+  "image_file": "assets/img/descubreleon/agenda/agenda_files/01nov_musica-ejemplo.jpg",
+  "short_desc": "2x1 buffet breakfast at El Faro restaurant",
+  "date": "2018-09-21",
+  "time": "9:40",
+  "desc_html_file": "event-desc-1.htm"
+},{
+  "title": "ThaiWok Plaza Sevilla2",
+  "link": "/event/item6",
+  "image_file": "assets/img/descubreleon/agenda/agenda_files/antros_01.jpg",
+  "short_desc": "2x1 buffet breakfast at El Faro restaurant",
+  "date": "2018-09-21",
+  "time": "12:00",
+  "desc_html_file": "event-desc-1.htm"
+}]

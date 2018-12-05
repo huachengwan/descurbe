@@ -18,7 +18,7 @@ const routes: Routes = [{
   path: 'event',
   component: EventComponent
 }, {
-  path: 'event/:url',
+  path: 'event/:link',
   component: EventDetailComponent
 }, {
   path: 'attraction',

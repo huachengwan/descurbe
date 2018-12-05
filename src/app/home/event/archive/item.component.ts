@@ -14,5 +14,4 @@ export class EventArchiveItemComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

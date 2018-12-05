@@ -3,14 +3,20 @@ import { ItemOfRestaurant } from './item-of-restaurant'
 import { ItemOfEvent } from './item-of-event'
 import { ItemOfArticle } from './item-of-article';
 import { ItemOfBar } from './item-of-bar';
-
+import { HttpClient } from '@angular/common/http';
+import * as _ from 'lodash';
 
 @Injectable({
   providedIn: 'root'
 })
-
 export class ArticleService {
-  constructor() { }
+  http: HttpClient;
+  constructor(
+    http: HttpClient
+  ) { 
+    this.http = http;
+  }  
+
   getRestaurants(): ItemOfRestaurant[] {
     let list = [];
     list.push(new ItemOfRestaurant('The lighthouse', 'restaurantes',  'assets/img/descubreleon/agenda/agenda_files/rest_elfaro-desayuno.jpg'));
@@ -21,16 +27,41 @@ export class ArticleService {
     list.push(new ItemOfRestaurant('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/rest_mariskena-huachinango-filete.jpg'));
     return list;
   }
-
+  
   getEvents(): ItemOfEvent[] {
     let list = [];
-    list.push(new ItemOfEvent('The lighthouse', '/event/item1',  'assets/img/descubreleon/agenda/agenda_files/parque-gj_01.jpg', '2x1 buffet breakfast at El Faro restaurant', '2018-09-21', '7:00'));
-    list.push(new ItemOfEvent('The lighthouse', '/event/item2',  'assets/img/descubreleon/agenda/agenda_files/rest_mariskena-molcajete.jpg', '2x1 buffet breakfast at El Faro restaurant', '2018-09-21', '7:30'));
-    list.push(new ItemOfEvent('ThaiWok Plaza Sevilla', '/event/item3', 'assets/img/descubreleon/agenda/agenda_files/cafes_01.jpg', '2x1 buffet breakfast at El Faro restaurant', '2018-09-21', '7:40'));
-    list.push(new ItemOfEvent('ThaiWok Plaza Sevilla', '/event/item4', 'assets/img/descubreleon/agenda/agenda_files/01nov_teatro-ejemplo.jpg', '2x1 buffet breakfast at El Faro restaurant', '2018-09-21', '8:00'));
-    list.push(new ItemOfEvent('ThaiWok Plaza Sevilla', '/event/item5', 'assets/img/descubreleon/agenda/agenda_files/01nov_musica-ejemplo.jpg', '2x1 buffet breakfast at El Faro restaurant', '2018-09-21', '9:00'));
-    list.push(new ItemOfEvent('ThaiWok Plaza Sevilla', '/event/item6', 'assets/img/descubreleon/agenda/agenda_files/antros_01.jpg', '2x1 buffet breakfast at El Faro restaurant', '2018-09-21', '12:00'));
+    this.http.get('/assets/temp-data/events.json').subscribe(res => {
+      for (let index in res) {
+        let item = res[index];
+        let item_ = new ItemOfEvent(item.title, item.link);
+        item_.image_file = item.image_file;
+        item_.short_desc = item.short_desc;
+        item_.date = item.date;
+        item_.time = item.time;
+        item_.desc_html_file = item.desc_html_file;
+        list.push(item_);
+      }
+    })
     return list;
+  }
+
+  getOneEvent(link): ItemOfEvent {
+    let item__ = null;
+    this.http.get('/assets/temp-data/events.json').subscribe(res => {
+      for (let index in res) {
+        let item = res[index];
+        if (item.link == link){
+          let item_ = new ItemOfEvent(item.title, item.link);
+          item_.image_file = item.image_file;
+          item_.short_desc = item.short_desc;
+          item_.date = item.date;
+          item_.time = item.time;
+          item_.desc_html_file = item.desc_html_file;
+          item__ = item_;
+        }
+      }
+    })
+    return item__;
   }
 
   getArticles(): ItemOfArticle[] {
