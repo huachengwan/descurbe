@@ -13,4 +13,7 @@ export class ItemOfEvent {
   public category: string;
   public category_color; string;
   public desc_html_file: string;
+  constructor() {
+    
+  }
 }
