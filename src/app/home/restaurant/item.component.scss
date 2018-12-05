@@ -1,0 +1,72 @@
+.item-box {
+  overflow: hidden;
+  margin-top: 20px;
+  .list-box {
+    width: 130px;
+    float: left;
+    @media(max-width: 767.98px){
+      & {
+        display: none;
+      }
+    }
+    button {
+      width: 100%;
+      text-align: left; color: #5a5a5a; font-family: inherit; font-size: 1.4em;
+      padding-left: 8px;
+      &.active {
+        background-color: #b0b0b0; color: #fff;
+      }
+    }
+  }
+  .content-box {
+    width: calc(100% - 150px); float: right;
+    overflow: hidden; margin-bottom: 20px;
+    @media(max-width: 767.98px){
+      & {
+        width: 100%;
+      }
+    }
+    .description-content {
+      h4 {
+        color: #212529; font-size: 2em;
+      }
+      p {
+        color: #212529; font-size: 1.14em;
+      }
+    }
+    agm-map {
+      height: 400px;
+      @media (max-width: 767.98px) {
+        height: 320px;
+      }
+      @media (max-width: 479.98px) {
+        height: 240px;
+      }
+    }
+    .slider-section {
+      .jssor1-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 1.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+  
+      @keyframes jssorl-009-spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+  
+      .jssorb052 .i {position:absolute;cursor:pointer;}
+      .jssorb052 .i .b {fill:#000;fill-opacity:0.3;}
+      .jssorb052 .i:hover .b {fill-opacity:.7;}
+      .jssorb052 .iav .b {fill-opacity: 1;}
+      .jssorb052 .i.idn {opacity:.3;}
+  
+      .jssora053 {display:block;position:absolute;cursor:pointer;}
+      .jssora053 .a {fill:none;stroke:#fff;stroke-width:640;stroke-miterlimit:10;}
+      .jssora053:hover {opacity:.8;}
+      .jssora053.jssora053dn {opacity:.5;}
+      .jssora053.jssora053ds {opacity:.3;pointer-events:none;}
+    }
+  }
+}

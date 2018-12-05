@@ -33,27 +33,11 @@ import { Component, OnInit } from '@angular/core';
   `]
 })
 export class HomeSliderComponent implements OnInit {
-  loadAPI: Promise<any>;
 
   constructor() {
-    this.loadAPI = new Promise((resolve) => {
-      this.loadScript('../../assets/js/jssor.slider.min.js');
-      this.loadScript('../../assets/js/home-slider.component.js');
-      resolve(true);
-    })
   }
 
   ngOnInit() {
-  }
-
-  public loadScript(url: string) {
-    const body = <HTMLDivElement> document.body;
-    const script = document.createElement('script');
-    script.innerHTML = '';
-    script.src = url;
-    script.async = false;
-    script.defer = true;
-    body.appendChild(script);
   }
 
 }

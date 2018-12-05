@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./item.component.scss']
 })
 export class RestaurantItemComponent implements OnInit {
-
-  constructor() { }
+  constructor() { 
+    
+  }
 
   ngOnInit() {
   }
+
+  
 
 }

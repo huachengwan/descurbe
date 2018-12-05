@@ -1,7 +1,7 @@
 .container-fluid {
   background-color: #fff;
   &.background-image {
-    background-image: url('../../../assets/img/event/portada_01.jpg');
+    background-image: url('../../../assets/img/descubreleon/restaurantes/thaiwok/portada_thaiwok.jpg');
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
@@ -32,7 +32,7 @@
       button {
         width: 100px;
         border-radius: 0;
-        color: #fff;
+        color: #fff; font-family: inherit; font-size: 1.4em;
         &.facebook {
           background-color: #3b5999;
         }
@@ -47,22 +47,8 @@
         }
       }
     }
-    .arrow-buttons {
-      position: absolute;
-      top: 10px; right: 10px;
-      button {
-        background-color: #ccc;
-        margin-left: 10px;
-        color: #888;
-        /deep/ .mat-button-wrapper{
-          .mat-icon {
-            font-size: 30px;
-          }
-        }
-      }
-    }
   }
-  .archive-section {
+  .detail-section {
     width: calc(100% - 315px);
     float: left;
   }
@@ -74,7 +60,7 @@
     .title-section {
       width: calc(100% - 165px);
     }
-    .archive-section {
+    .detail-section {
       width: 100%;
     }
     .sidebar {
@@ -86,6 +72,9 @@
       width: 100%;
       margin-left: 0;
     }
+  }
+  &.contact-info-section {
+    background-color: #f98820;
   }
   
 }
