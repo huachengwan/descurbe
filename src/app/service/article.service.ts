@@ -56,6 +56,7 @@ export class ArticleService {
         let item = res[index];
         let item_ = new ItemOfEvent();
         item_.title = item.title;
+        item_.link = item.link;
         item_.subtitle = item.subtitle;
         item_.image_file = item.image_file;
         item_.short_desc = item.short_desc;
@@ -83,6 +84,7 @@ export class ArticleService {
         let item = res[index];
         if (item.link == link){
           current_item.title = item.title;
+          current_item.link = item.link;
           current_item.subtitle = item.subtitle;
           current_item.link = item.link;
           current_item.image_file = item.image_file;
