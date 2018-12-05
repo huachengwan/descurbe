@@ -74,7 +74,83 @@
     }
   }
   &.contact-info-section {
-    background-color: #f98820;
+    background: rgb(232, 234, 233);
+    .container {
+      padding-top: 50px; padding-bottom: 50px;
+      .row {
+        margin-left: 150px;
+        @media(max-width: 767.98px) {
+          margin-left: 0;
+        }
+      }
+      .col-full {
+        width: 100%;
+      }
+      .col-half {
+        width: 420px;
+        @media(max-width: 767.98px) {
+          width: 100%;
+        }
+      }
+      h4 {
+        font-size: 3.51em; color: #000; line-height: 1.3em; font-weight: bold;
+      } 
+      h5 {
+        font-size: 2.3em; color: #fff; line-height: 1.5em;
+      }
+      label {
+        display: inline-block; width: 100px; 
+        vertical-align: top;
+        font-size: 1.14em; color: #000;
+      }
+      span {
+        display: inline-block; width: calc(100% - 120px);
+        color: #444; font-size: 1.14em;
+      }
+      a {
+        color: #000;
+        &:hover {
+          color: #fff;
+        }
+        &.facebook-btn{
+          background: url('../../../assets/img/facebook_1.png') no-repeat center center;
+          display:inline-block; width: 40px; height: 40px; margin-right: 10px;
+          &:hover{
+            background-image: url('../../../assets/img/facebook_2.png');
+          }
+        }
+        &.twitter-btn{
+          background: url('../../../assets/img/twitter_1.png') no-repeat center center;
+          display:inline-block; width: 40px; height: 40px; margin-right: 10px;
+          &:hover{
+            background-image: url('../../../assets/img/twitter_2.png');
+          }
+        }
+        &.instagram-btn{
+          background: url('../../../assets/img/instagram_1.png') no-repeat center center;
+          display:inline-block; width: 40px; height: 40px; margin-right: 10px;
+          &:hover{
+            background-image: url('../../../assets/img/instagram_2.png');
+          }
+        }
+        &.ubereats-btn {
+          background: url('../../../assets/img/ubereats_1.png') no-repeat center center;
+          display:inline-block; width: 91px; height: 40px; margin-right: 10px;
+          &:hover{
+            background-image: url('../../../assets/img/ubereats_2.png');
+          }
+        }
+        &.sindelantal-btn {
+          background: url('../../../assets/img/sindelantal_1.png') no-repeat center center;
+          display:inline-block; width: 127px; height: 54px; margin-right: 10px;
+          &:hover{
+            background-image: url('../../../assets/img/sindelantal_2.png');
+          }
+          
+        }
+      }
+
+    }
   }
   
 }
