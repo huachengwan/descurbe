@@ -1,3 +1,34 @@
-<p>
-  item works!
-</p>
+<div class="item-box">
+  <div class="content-box">
+    <div class="img-wrapper">
+      <div class="title">
+        Restaurants
+      </div>
+      <a routerLink="{{item.link}}"><img class="img-fluid" src="{{item.image_file}}"></a>
+    </div>
+    <div class="right-wrapper">
+      <div class="title">
+        <a routerLink="{{item.link}}">{{item.title}}</a>
+      </div>
+      <div class="short_desc">
+        <div class="address">
+          <i class="fa fa-map-marker"></i>
+          {{item.title}}
+        </div>
+        <div class="timeline">
+          <i class="fa fa-clock-o"></i>
+          {{item.title}}
+        </div>
+        <div class="phonenumber">
+          <i class="fa fa-phone"></i>
+          {{item.title}}
+        </div>
+      </div>
+      <div class="text-right">
+        <button class="btn_showmore" tabindex="0">
+          Ver más &gt;
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

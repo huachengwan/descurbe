@@ -1,0 +1,91 @@
+.container-fluid {
+  background-color: #fff;
+  &.background-image {
+    background-image: url('../../../assets/img/cafes_files/cafe.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }  
+  img {
+    padding-right: 1%;
+  }
+  .title-section {
+    margin-left: 150px; margin-top: 300px;
+    width: calc(100% - 465px);
+    background-color: #fff;
+    height: 200px; padding: 30px;
+    position: relative;    
+    h2.current-date{
+      font-size: 3.51em;
+      font-family: Oswald;
+      font-weight: bold;
+      @media(max-width: 1023.98px){
+        font-size: 2em;
+      }
+    }
+    h5{
+      font-size: 32px;
+      font-family: Oswald;
+    }
+    .social-buttons{
+      padding:10px;
+      button {
+        width: 100px;
+        border-radius: 0;
+        color: #fff;
+        &.facebook {
+          background-color: #3b5999;
+        }
+        &.twitter {
+          background-color: #55acef;
+        }
+        &.whatsapp {
+          background-color: #26d367;
+        }
+        &.email {
+          background-color: #7d7d7d;
+        }
+      }
+    }
+    .arrow-buttons {
+      position: absolute;
+      top: 10px; right: 10px;
+      button {
+        background-color: #ccc;
+        margin-left: 10px;
+        color: #888;
+        /deep/ .mat-button-wrapper{
+          .mat-icon {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  .cafe-section {
+    width: calc(100% - 315px);
+    float: left;
+  }
+  .sidebar {
+    width: 300px;
+    float: right;
+  }
+  @media(max-width: 1200px){
+    .title-section {
+      width: calc(100% - 165px);
+    }
+    .cafe-section {
+      width: 100%;
+    }
+    .sidebar {
+      display: none;
+    }
+  }
+  @media(max-width: 1000px){
+    .title-section {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  
+}

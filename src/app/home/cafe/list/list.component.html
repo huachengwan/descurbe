@@ -1,3 +1,6 @@
-<p>
-  list works!
-</p>
+<div class="cafe-section">
+    <div class="item" *ngFor="let item of items">
+      <app-cafe-list-item [item]="item"></app-cafe-list-item>
+    </div>
+  </div>
+  
