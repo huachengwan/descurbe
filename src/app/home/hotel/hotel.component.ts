@@ -3,10 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-hotel',
   templateUrl: './hotel.component.html',
-  styles: []
+  styleUrls: ['./hotel.component.scss']
 })
 export class HotelComponent implements OnInit {
-
+  title = 'Enterprise Inn';
+  subtitle = '(Leave this space for subtities)';
   constructor() { }
 
   ngOnInit() {
