@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ItemOfEvent } from '../../../service/item-of-event';
+import { ItemOfCafe } from '../../../service/item-of-cafe';
 
 @Component({
   selector: 'app-cafe-list-item',
@@ -10,7 +10,7 @@ export class CafeListItemComponent implements OnInit {
 
   constructor() { }
 
-  @Input() item: ItemOfEvent;
+  @Input() item: ItemOfCafe;
 
   ngOnInit() {
   }

@@ -7,7 +7,7 @@
       {{item.time}} 
     </div>
     <div class="time-t3">
-      AM.
+      {{item.apm}}
     </div>
   </div>
   <div class="content-box">
@@ -19,12 +19,12 @@
         {{item.time}} 
       </span>
       <span class="timeAMPM">
-        AM.
+        {{item.apm}}
       </span>
     </div>
     <div class="img-wrapper">
       <div class="title">
-        Restaurants
+        {{item.category}}
       </div>
       <a routerLink="{{item.link}}"><img class="img-fluid" src="{{item.image_file}}"></a>
     </div>
@@ -33,7 +33,7 @@
         <a routerLink="{{item.link}}">{{item.title}}</a>
       </div>
       <div class="subtitle">
-        of the Hotel Enterprise Inn
+        {{item.subtitle}}
       </div>
       <div class="short_desc">
         {{item.short_desc}}

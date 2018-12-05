@@ -3,6 +3,7 @@ import { ItemOfRestaurant } from './item-of-restaurant'
 import { ItemOfEvent } from './item-of-event'
 import { ItemOfArticle } from './item-of-article';
 import { ItemOfBar } from './item-of-bar';
+import { ItemOfCafe } from './item-of-cafe'
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import * as _ from 'lodash';
@@ -37,7 +38,7 @@ export class ArticleService {
   }
 
   getOneRestaurant(): ItemOfRestaurant {
-    let current_item = new ItemOfEvent();
+    let current_item = new ItemOfRestaurant();
     this.getRestaurantsFromJson().subscribe(res => {
       for ( let index in res ) {
         let item = res[index];
@@ -54,6 +55,8 @@ export class ArticleService {
       for (let index in res) {
         let item = res[index];
         let item_ = new ItemOfEvent();
+        item_.title = item.title;
+        item_.subtitle = item.subtitle;
         item_.image_file = item.image_file;
         item_.short_desc = item.short_desc;
         item_.year = item.year;
@@ -149,7 +152,7 @@ export class ArticleService {
   }
 
   getBarsFromJson(): Observable<ItemOfBar[]>{
-    return this.http.get<ItemOfBar[]>('/assets/temp-data/articles.json');
+    return this.http.get<ItemOfBar[]>('/assets/temp-data/bars.json');
   }
 
   getOneBar(): ItemOfBar {
@@ -167,4 +170,40 @@ export class ArticleService {
     return current_item;
   }
 
+
+  getCafes(): ItemOfCafe[] {
+    let list = [];
+    this.getCafesFromJson().subscribe(res=>{
+      for (let index in res) {
+        let item = res[index];
+        let item_ = new ItemOfCafe();
+        item_.image_file = item.image_file;
+        item_.title = item.title;
+        item_.address = item.address;
+        item_.open_time = item.open_time;
+        item_.phone_number = item.phone_number;
+        list.push(item_);
+      }
+    })
+    return list;
+  }
+
+  getCafesFromJson(): Observable<ItemOfCafe[]>{
+    return this.http.get<ItemOfCafe[]>('/assets/temp-data/cafes.json');
+  }
+
+  getOneCafe(): ItemOfCafe {
+    let current_item = new ItemOfCafe();
+    this.getCafesFromJson().subscribe(res => {
+      for ( let index in res ) {
+        let item = res[index];
+        current_item.title = item.title;
+        current_item.image_file = item.image_file;
+        current_item.address = item.address;
+        current_item.open_time = item.open_time;
+        current_item.phone_number = item.phone_number;
+      }
+    })
+    return current_item;
+  }
 }

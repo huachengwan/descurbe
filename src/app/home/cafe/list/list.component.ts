@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ArticleService } from '../../../service/article.service';
-import { ItemOfEvent } from '../../../service/item-of-event';
+import { ItemOfCafe } from '../../../service/item-of-cafe';
 
 @Component({
   selector: 'app-cafe-list',
@@ -8,11 +8,11 @@ import { ItemOfEvent } from '../../../service/item-of-event';
   styleUrls: ['./list.component.scss']
 })
 export class CafeListComponent implements OnInit {
-  items: ItemOfEvent[];
+  items: ItemOfCafe[];
   constructor(
     articleService: ArticleService
   ) { 
-    this.items = articleService.getEvents();
+    this.items = articleService.getCafes();
   }
 
   ngOnInit() {

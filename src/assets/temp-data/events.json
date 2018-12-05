@@ -1,6 +1,6 @@
 [{
   "title": "Día de Muertos",
-  "subtitle": "", 
+  "subtitle": " ", 
   "link": "/event/item1",
   "image_file": "assets/img/descubreleon/agenda/agenda_files/parque-gj_01.jpg",
   "short_desc": "Como en todo México, el 1 y 2 de Noviembre en los hogares leoneses se levantan altares con ofrendas en honor de los parientes fallecidos.",
@@ -30,7 +30,7 @@
   "desc_html_file": "event-desc-1.htm"
 },{
   "title": "Una vuelta a pie o en bici al Parque Metropolitano",
-  "subtitle": "",
+  "subtitle": " ",
   "link": "/event/item3",
   "image_file": "assets/img/descubreleon/agenda/agenda_files/cafes_01.jpg",
   "short_desc": "El parque natural más grande en León con 337 hectáreas, ideal para practicar deportes al aire libre",
@@ -60,7 +60,7 @@
   "desc_html_file": "event-desc-1.htm"
 },{
   "title": "Café Bar 500 Noches",
-  "subtitle": "",
+  "subtitle": " ",
   "link": "/event/item5",
   "image_file": "assets/img/descubreleon/agenda/agenda_files/01nov_musica-ejemplo.jpg",
   "short_desc": "Decoración singular, buena comida, café chiapaneco y tragos con música en vivo como no la escucharás en otro lugar.",
@@ -68,14 +68,14 @@
   "month": "Noviembre",
   "date": "1",
   "day" : "Jueves",
-  "time": "8:00",
+  "{{item.apm}}": "8:00",
   "apm" : "PM.",
   "category": "pubs",
   "category_color": "#000",
   "desc_html_file": "event-desc-1.htm"
 },{
   "title": "Hotel Radisson Poliforum Plaza",
-  "subtitle": "",
+  "subtitle": " ",
   "link": "/event/item6",
   "image_file": "assets/img/descubreleon/agenda/agenda_files/antros_01.jpg",
   "short_desc": "En la zona de negocios de León, a 24 minutos del aeropuerto y sólo 5 minutos del centro de convenciones y exposiciones Poliforum León",
