@@ -20,13 +20,32 @@ export class ArticleService {
 
   getRestaurants(): ItemOfRestaurant[] {
     let list = [];
-    list.push(new ItemOfRestaurant('The lighthouse', 'restaurantes',  'assets/img/descubreleon/agenda/agenda_files/rest_elfaro-desayuno.jpg'));
-    list.push(new ItemOfRestaurant('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/rest_thaiwok_01.jpg'));
-    list.push(new ItemOfRestaurant('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/rest_molinito-oreja.jpg'));
-    list.push(new ItemOfRestaurant('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/rest_rincongaucho-empanadas.jpg'));
-    list.push(new ItemOfRestaurant('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/rest_carnesdelatorre-carne.jpg'));
-    list.push(new ItemOfRestaurant('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/rest_mariskena-huachinango-filete.jpg'));
+    this.getRestaurantsFromJson().subscribe(res=>{
+      for (let index in res) {
+        let item = res[index];
+        let item_ = new ItemOfRestaurant();
+        item_.image_file = item.image_file;
+        item_.title = item.title;
+        list.push(item_);
+      }
+    })
     return list;
+  }
+
+  getRestaurantsFromJson(): Observable<ItemOfRestaurant[]>{
+    return this.http.get<ItemOfRestaurant[]>('/assets/temp-data/restaurants.json');
+  }
+
+  getOneRestaurant(): ItemOfRestaurant {
+    let current_item = new ItemOfEvent();
+    this.getRestaurantsFromJson().subscribe(res => {
+      for ( let index in res ) {
+        let item = res[index];
+        current_item.title = item.title;
+        current_item.image_file = item.image_file;
+      }
+    })
+    return current_item;
   }
   
   getEvents(): ItemOfEvent[] {
@@ -34,11 +53,16 @@ export class ArticleService {
     this.getEventsFromJson().subscribe(res => {
       for (let index in res) {
         let item = res[index];
-        let item_ = new ItemOfEvent(item.title, item.link);
+        let item_ = new ItemOfEvent();
         item_.image_file = item.image_file;
         item_.short_desc = item.short_desc;
+        item_.year = item.year;
+        item_.month = item.month;
         item_.date = item.date;
         item_.time = item.time;
+        item_.apm = item.apm;
+        item_.category = item.category;
+        item_.category_color = item.category_color;
         item_.desc_html_file = item.desc_html_file;
         list.push(item_);
       }
@@ -50,17 +74,24 @@ export class ArticleService {
   }
 
   getOneEvent(link): ItemOfEvent {
-    let current_item = new ItemOfEvent('', '');
+    let current_item = new ItemOfEvent();
     this.getEventsFromJson().subscribe(res => {
       for (let index in res) {
         let item = res[index];
         if (item.link == link){
           current_item.title = item.title;
+          current_item.subtitle = item.subtitle;
           current_item.link = item.link;
           current_item.image_file = item.image_file;
           current_item.short_desc = item.short_desc;
+          current_item.year = item.year;
+          current_item.month = item.month;
           current_item.date = item.date;
+          current_item.day = item.day;
           current_item.time = item.time;
+          current_item.apm = item.apm;
+          current_item.category = item.category;
+          current_item.category_color = item.category_color;
           current_item.desc_html_file = item.desc_html_file;
         }
       }
@@ -68,23 +99,72 @@ export class ArticleService {
     return current_item;
   }
 
+
   getArticles(): ItemOfArticle[] {
     let list = [];
-    list.push(new ItemOfArticle('Cumplimos 10 anos y io celebramos por todo dlmundo', 'restaurantes',  'assets/img/descubreleon/articulos/2018/10aniv_01_med.jpg'));
-    list.push(new ItemOfArticle('Cumplimos 10 anos y io celebramos por todo dlmundo', 'restaurantes',  'assets/img/descubreleon/articulos/2018/02_med.jpg'));
-    list.push(new ItemOfArticle('Cumplimos 10 anos y io celebramos por todo dlmundo', 'restaurantes', 'assets/img/descubreleon/articulos/2018/03_med.jpg'));
-    list.push(new ItemOfArticle('Cumplimos 10 anos y io celebramos por todo dlmundo', 'restaurantes', 'assets/img/descubreleon/articulos/2018/04_med.jpg'));
+    this.getArticlesFromJson().subscribe(res=>{
+      for (let index in res) {
+        let item = res[index];
+        let item_ = new ItemOfArticle();
+        item_.image_file = item.image_file;
+        item_.title = item.title;
+        list.push(item_);
+      }
+    })
     return list;
   }
 
+  getArticlesFromJson(): Observable<ItemOfArticle[]>{
+    return this.http.get<ItemOfArticle[]>('/assets/temp-data/articles.json');
+  }
+
+  getOneArticle(): ItemOfArticle {
+    let current_item = new ItemOfEvent();
+    this.getArticlesFromJson().subscribe(res => {
+      for ( let index in res ) {
+        let item = res[index];
+        current_item.title = item.title;
+        current_item.image_file = item.image_file;
+      }
+    })
+    return current_item;
+  }
+
+
   getBars(): ItemOfBar[] {
     let list = [];
-    list.push(new ItemOfBar('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/vn_barezzito_01.jpg'));
-    list.push(new ItemOfBar('The lighthouse', 'restaurantes',  'assets/img/descubreleon/agenda/agenda_files/vn_etnico_01.jpg'));
-    list.push(new ItemOfBar('The lighthouse', 'restaurantes',  'assets/img/descubreleon/agenda/agenda_files/vn_500noches_01.jpg'));
-    list.push(new ItemOfBar('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/vn_panic-botanic_01.jpg'));
-    list.push(new ItemOfBar('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/vn_panteon-calzada_01.jpg'));
-    list.push(new ItemOfBar('ThaiWok Plaza Sevilla', 'restaurantes', 'assets/img/descubreleon/agenda/agenda_files/vn_rey-compadre_01.jpg'));
+    this.getBarsFromJson().subscribe(res=>{
+      for (let index in res) {
+        let item = res[index];
+        let item_ = new ItemOfBar();
+        item_.image_file = item.image_file;
+        item_.title = item.title;
+        item_.address = item.address;
+        item_.open_time = item.open_time;
+        item_.phone_number = item.phone_number;
+        list.push(item_);
+      }
+    })
     return list;
   }
+
+  getBarsFromJson(): Observable<ItemOfBar[]>{
+    return this.http.get<ItemOfBar[]>('/assets/temp-data/articles.json');
+  }
+
+  getOneBar(): ItemOfBar {
+    let current_item = new ItemOfBar();
+    this.getBarsFromJson().subscribe(res => {
+      for ( let index in res ) {
+        let item = res[index];
+        current_item.title = item.title;
+        current_item.image_file = item.image_file;
+        current_item.address = item.address;
+        current_item.open_time = item.open_time;
+        current_item.phone_number = item.phone_number;
+      }
+    })
+    return current_item;
+  }
+
 }

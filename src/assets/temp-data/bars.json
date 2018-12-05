@@ -1,0 +1,43 @@
+[{
+  "title" : "Café Berlín",
+  "image_file" : "",
+  "address" : "Av. Roma #803, Col. Andrade.",
+  "open_time" : "8:00 - 22:00 hrs.",
+  "phone_number" : "01 477 716 0279"
+},
+{
+  "title" : "Café Colibrí",
+  "image_file" : "",
+  "address" : "Francisco I. Mader #406, Centro.",
+  "open_time" : "8:00 - 22:00 hrs.",
+  "phone_number" : "01 477 688 6714"
+},
+{
+  "title" : "El Patio café cultural",
+  "image_file" : "",
+  "address" : "La Paz #230, Centro.",
+  "open_time" : "9:00 - 22:00 hrs.",
+  "phone_number" : "01 477 700 0000"
+},
+{
+  "title" : "Café del Valle",
+  "image_file" : "",
+  "address" : "Av. Panorama #1109. Col. Valle del Campestre",
+  "open_time" : "8:30 - 22:30 hrs.",
+  "phone_number" : "01 477 233 1078"
+},
+{
+  "title" : "Café Bar 500 Noches",
+  "image_file" : "",
+  "address" : "Plaza Palmas Local 14A,Paseo del Moral #1030.",
+  "open_time" : "",
+  "phone_number" : ""
+},
+{
+  "title" : "Cafezzito",
+  "image_file" : "",
+  "address" : "Av. León #409 Col. Jardínes del Moral",
+  "open_time" : "9:00 - 22:00 hrs.",
+  "phone_number" : "01 477 312 5837"
+}
+]
