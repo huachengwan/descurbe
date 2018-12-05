@@ -17,9 +17,6 @@
   }
   .content-box {
     width: calc(100% - 135px); float: right;
-    @media (max-width: 1000px) {
-      width: calc(100%);
-    }
     overflow: hidden; margin-bottom: 20px;
     .time-box {
       float: none;
@@ -55,7 +52,7 @@
       }
       .subtitle {
         text-overflow: ellipsis; white-space: nowrap; 
-        overflow: hidden;
+        overflow: hidden; 
       }
       .short_desc {
         height: 120px; margin-top:15px; overflow: hidden;
