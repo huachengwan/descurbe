@@ -1,44 +1,54 @@
 <div class="container-fluid background-image">
-    <div class="container">
-      <div class="row">
-        <div class="title-section">
-          <div class="arrow-buttons">
-            <button mat-icon-button><mat-icon fontSet="fa" fontIcon="fa-angle-left"></mat-icon></button>
-            <button mat-icon-button><mat-icon fontSet="fa" fontIcon="fa-angle-right"></mat-icon></button>
-          </div>
-          <h2 class="current-date">{{itemData.title}}</h2>
-          <h5>Con Odiseo Bichir y Benjamin Rivero</h5>
-          <div class="row social-buttons">
-            <button mat-button class="facebook">
-              <img alt="FaceBook" src="../../../assets/img/facebook_box.png">
-              1.7k
-            </button>
-            <button mat-button class="twitter">
-              <img alt="Twitter" src="../../../assets/img/twitter_box.png">
-            </button>
-            <button mat-button class="whatsapp">
-              <img alt="whatsapp" src="../../../assets/img/whatsapp_box.png">
-              483
-            </button>
-            <button mat-button class="email">
-              <img alt="Mail" src="../../../assets/img/email_box.png">
-              18
-            </button>
-          </div>
+  <div class="container">
+    <div class="row">
+      <div class="title-section">
+        <div class="arrow-buttons">
+          <button mat-icon-button routerLink="/event"><mat-icon fontSet="fa" fontIcon="fa-times"></mat-icon></button>
+        </div>
+        <h2 class="title">{{itemData.title}}</h2>
+        <h5>Con Odiseo Bichir y Benjamin Rivero</h5>
+        <div class="row social-buttons">
+          <button mat-button class="facebook">
+            <img alt="FaceBook" src="assets/img/facebook_box.png">
+            1.7k
+          </button>
+          <button mat-button class="twitter">
+            <img alt="Twitter" src="assets/img/twitter_box.png">
+          </button>
+          <button mat-button class="whatsapp">
+            <img alt="whatsapp" src="assets/img/whatsapp_box.png">
+            483
+          </button>
+          <button mat-button class="email">
+            <img alt="Mail" src="assets/img/email_box.png">
+            18
+          </button>
         </div>
       </div>
     </div>
   </div>
-  <div class="container-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="archive-section">
+</div>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="detail-section">
+          <div class="time-box d-none d-lg-block">
+            <p class="time-t1">
+              1
+            </p>
+            <p class="time-t2">
+              Nov
+            </p>
           </div>
-          <div class="sidebar">
-            <app-home-sidebar></app-home-sidebar>
+          <div class="content-box">
+            {{itemData_desc_html}}
           </div>
+        </div>
+        <div class="sidebar">
+          <app-home-sidebar></app-home-sidebar>
         </div>
       </div>
     </div>
   </div>
+</div>
