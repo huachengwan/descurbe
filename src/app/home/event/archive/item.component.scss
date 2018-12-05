@@ -29,7 +29,12 @@
       float: left;
       position: relative;
       img {
-        width: 100%;
+        overflow: hidden;
+        width: 100%; 
+        /*
+        height: 0;
+        padding-top: 237px / 330px * 100%;
+        */
       }
       .title {
         background-color: rgba(250, 123, 10, 0.8);

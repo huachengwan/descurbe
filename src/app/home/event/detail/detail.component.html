@@ -44,6 +44,9 @@
           <div class="content-box">
             <img *ngIf="itemData.desc_image_path" class="desc_image" src="{{itemData.desc_image_path}}"/>
             {{itemData.desc}}
+            <div class="youtube-embed" *ngIf="itemData.desc_youtube">
+              <iframe src="{{itemData.desc_youtube}}" width="560" height="315" frameborder="0" allowfullscreen=""></iframe>
+            </div>
           </div>
           <div class="content-box hotnews-box">
             <div class="img-wrapper">

@@ -70,6 +70,7 @@ export class ArticleService {
         item_.desc_html_file = item.desc_html_file;
         item_.desc = item.desc;
         item_.desc_image_path = item.desc_image_path;
+        item_.desc_youtube = item.desc_youtube;
         list.push(item_);
       }
     })
@@ -102,6 +103,7 @@ export class ArticleService {
           current_item.desc_html_file = item.desc_html_file;
           current_item.desc = item.desc;
           current_item.desc_image_path = item.desc_image_path;
+          current_item.desc_youtube = item.desc_youtube
         }
       }
     })

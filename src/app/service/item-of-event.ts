@@ -15,6 +15,7 @@ export class ItemOfEvent {
   public desc_html_file: string;
   public desc_image_path: string;
   public desc: string;
+  public desc_youtube: string;
   constructor() {
     
   }
