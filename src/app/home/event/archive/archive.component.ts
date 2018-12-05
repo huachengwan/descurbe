@@ -10,7 +10,7 @@ import { ItemOfEvent } from '../../../service/item-of-event';
 export class EventArchiveComponent implements OnInit {
   items: ItemOfEvent[];
   constructor(
-    articleService: ArticleService
+    private articleService: ArticleService
   ) { 
     this.items = articleService.getEvents();
   }

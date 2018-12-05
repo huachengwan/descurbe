@@ -4,6 +4,7 @@ import { ItemOfEvent } from './item-of-event'
 import { ItemOfArticle } from './item-of-article';
 import { ItemOfBar } from './item-of-bar';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import * as _ from 'lodash';
 
 @Injectable({
@@ -30,7 +31,7 @@ export class ArticleService {
   
   getEvents(): ItemOfEvent[] {
     let list = [];
-    this.http.get('/assets/temp-data/events.json').subscribe(res => {
+    this.getEventsFromJson().subscribe(res => {
       for (let index in res) {
         let item = res[index];
         let item_ = new ItemOfEvent(item.title, item.link);
@@ -44,24 +45,27 @@ export class ArticleService {
     })
     return list;
   }
+  getEventsFromJson(): Observable<ItemOfEvent[]> {
+    return this.http.get<ItemOfEvent[]>('/assets/temp-data/events.json');
+  }
 
   getOneEvent(link): ItemOfEvent {
-    let item__ = null;
-    this.http.get('/assets/temp-data/events.json').subscribe(res => {
+    let current_item = new ItemOfEvent('', '');
+    this.getEventsFromJson().subscribe(res => {
       for (let index in res) {
         let item = res[index];
         if (item.link == link){
-          let item_ = new ItemOfEvent(item.title, item.link);
-          item_.image_file = item.image_file;
-          item_.short_desc = item.short_desc;
-          item_.date = item.date;
-          item_.time = item.time;
-          item_.desc_html_file = item.desc_html_file;
-          item__ = item_;
+          current_item.title = item.title;
+          current_item.link = item.link;
+          current_item.image_file = item.image_file;
+          current_item.short_desc = item.short_desc;
+          current_item.date = item.date;
+          current_item.time = item.time;
+          current_item.desc_html_file = item.desc_html_file;
         }
       }
     })
-    return item__;
+    return current_item;
   }
 
   getArticles(): ItemOfArticle[] {

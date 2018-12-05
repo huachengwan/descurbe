@@ -154,7 +154,6 @@ import { ItemOfEvent } from '../service/item-of-event';
 })
 export class HomeEventComponent implements OnInit {
   items: ItemOfEvent[];
-
   constructor(
     articleService: ArticleService
   ) {
