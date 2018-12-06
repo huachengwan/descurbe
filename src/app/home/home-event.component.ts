@@ -77,9 +77,13 @@ import { ItemOfEvent } from '../service/item-of-event';
       position: relative;
       overflow: hidden;
     }
+    .topic {
+      margin-left: 1%;
+    } 
     .img-container .title {
       position: absolute;
       left: 0; top: 0;
+      padding-left: 8px; padding-right: 8px;padding-top: 4px; padding-bottom: 4px;
       background-color: rgba(0,0,0,0.5);
       font-size: 20px; color: #fff;
     }

@@ -52,6 +52,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     position: relative;
   }
   .title {
+    padding-left: 8px; padding-right: 8px;padding-top: 4px; padding-bottom: 4px;
     color: rgb(255, 255, 255);
     font-size: 40px;
     font-family: Oswald;

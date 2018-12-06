@@ -47,6 +47,9 @@ import { Component, OnInit } from '@angular/core';
       color: #fff; font-size: 20px; line-height: 35px;
       border: 0;
     }
+    .row {
+      padding: 2%;
+    }
     @media(max-width: 767.98px) {
       .submit input {
         width: 100%;

@@ -59,6 +59,7 @@ class Item {
     width: 100%;
   }
   .title {
+    padding-left: 8px; padding-right: 8px;padding-top: 4px; padding-bottom: 4px;
     color: rgb(255, 255, 255);
     font-size: 45px;
     font-family: Oswald;
