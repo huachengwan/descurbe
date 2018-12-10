@@ -270,6 +270,13 @@
     "@babel/runtime" "7.0.0"
     recompose "^0.29.0"
 
+"@ng-bootstrap/ng-bootstrap@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-4.0.0.tgz#e56aafc8e3ae900b88d528303a5962cc363088ed"
+  integrity sha512-jWVHRDUYppOSvzclP9d3lVWGUO+y0X9W6jdfyYehDkJCY0MFgtwefLYMtQ/NJ4niPzm2d/zZn+Bte48iIn0nKw==
+  dependencies:
+    tslib "^1.9.0"
+
 "@ngtools/webpack@6.1.0-rc.0":
   version "6.1.0-rc.0"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-6.1.0-rc.0.tgz#186ac69382092de56ea86edca7a666954b6d2aac"
@@ -296,6 +303,11 @@
     rxjs "^6.0.0"
     semver "^5.3.0"
     semver-intersect "^1.1.2"
+
+"@swimlane/ngx-datatable@^14.0.0":
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/@swimlane/ngx-datatable/-/ngx-datatable-14.0.0.tgz#6227625e2ce2e9143735d4deeb3ab34b88745c26"
+  integrity sha512-zgRY58MzTpg9Jb575cg0O87mLtXYi6fx7NLRPRHdQ/FqH9mKjZ3i7+OjqtR8/w3KRmFP2Hnkmx52VzldZIKspg==
 
 "@types/google-maps@*":
   version "3.2.0"
@@ -7207,6 +7219,14 @@ ng2-dragula@^1.5.0:
   dependencies:
     dragula "^3.7.2"
 
+ngx-perfect-scrollbar@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/ngx-perfect-scrollbar/-/ngx-perfect-scrollbar-7.1.0.tgz#9233960512e6c20f39fc22e1f78d85d6884675bc"
+  integrity sha512-88dpMDb9dfRWZb+U1VlLeapy/XA2wzWn44xNrNwiuoYCetwthHorH6C6vDcYFC7mF5V9Xvc50jk2GLQ4lthjTA==
+  dependencies:
+    perfect-scrollbar "^1.4.0"
+    resize-observer-polyfill "^1.4.0"
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
@@ -7970,7 +7990,7 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-perfect-scrollbar@1.4.0:
+perfect-scrollbar@1.4.0, perfect-scrollbar@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/perfect-scrollbar/-/perfect-scrollbar-1.4.0.tgz#5d014ef9775e1f43058a1dbae9ed1daf0e7091f1"
 
@@ -9309,6 +9329,11 @@ require_optional@^1.0.1:
 requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
+
+resize-observer-polyfill@^1.4.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.0.tgz#660ff1d9712a2382baa2cad450a4716209f9ca69"
+  integrity sha512-M2AelyJDVR/oLnToJLtuDJRBBWUGUvvGigj1411hXhAdyFWqMaqHp7TixW3FpiLuVaikIcR1QL+zqoJoZlOgpg==
 
 resolve-cwd@^2.0.0:
   version "2.0.0"

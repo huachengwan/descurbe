@@ -3,7 +3,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { SharedModule } from './shared/shared.module';
 import { AuthModule } from './auth/auth.module';
@@ -25,13 +24,15 @@ import {
   MatStepperModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, MatTreeModule
 } from '@angular/material';
 import { AgmCoreModule } from '@agm/core';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
+import { HomeLayoutComponent } from './home/layout.component';
 import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './common/header.component';
-import { HeaderMobileComponent } from './common/header-mobile.component';
-import { FooterComponent } from './common/footer.component';
+import { HeaderComponent } from './home/common/header.component';
+import { HeaderMobileComponent } from './home/common/header-mobile.component';
+import { FooterComponent } from './home/common/footer.component';
 import { HomeSidebarComponent } from './home/home-sidebar.component';
-import { CalendarComponent } from './common/calendar.component';
+import { CalendarComponent } from './home/common/calendar.component';
 
 import { HomeWelcomeimageComponent } from './home/home-welcomeimage.component';
 import { HomeSliderComponent } from './home/home-slider.component';
@@ -61,6 +62,7 @@ import { BathComponent } from './home/bath/bath.component';
   declarations: [
     AppComponent,
 
+    HomeLayoutComponent,
     HomeComponent,
     HeaderComponent,
     HeaderMobileComponent,
@@ -90,7 +92,8 @@ import { BathComponent } from './home/bath/bath.component';
     CafeDetailComponent,
     BarComponent,
     HotelComponent,
-    BathComponent,    
+    BathComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -106,8 +109,8 @@ import { BathComponent } from './home/bath/bath.component';
 
     MDBBootstrapModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyBslHE0NY-gTEOEQoJ_grZ682vBFi4rYTI'
-    })
+      apiKey: 'AIzaSyDlaGIXLEDPSxiBrYOX2dwCePMVkRUebZc'
+    }),
   ],
   exports: [
     MatAutocompleteModule, MatBadgeModule, MatBottomSheetModule, MatButtonModule, MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule,MatDialogModule, MatDividerModule, MatExpansionModule, MatFormFieldModule, MatGridListModule, MatIconModule, MatInputModule, MatListModule, MatMenuModule, MatPaginatorModule, MatProgressBarModule, MatProgressSpinnerModule, MatRadioModule, MatRippleModule, MatSelectModule, MatSidenavModule, MatSlideToggleModule, MatSliderModule, MatSnackBarModule, MatSortModule, MatStepperModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, MatTreeModule,

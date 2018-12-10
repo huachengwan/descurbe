@@ -21,6 +21,7 @@
               "src/favicon.ico"
             ],
             "styles": [
+              "src/assets/admin/scss/style.scss",
               "src/styles.scss"
             ],
             "scripts": []

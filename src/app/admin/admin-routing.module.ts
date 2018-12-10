@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AdminComponent } from './admin.component';
 import { OnlyAdminUsersGuard } from './admin-user-guard';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [{
   path: 'admin',
@@ -10,6 +11,10 @@ const routes: Routes = [{
   children: [{
     path: '',
     component: AdminComponent,
+    children: [{
+      path: '',
+      component: DashboardComponent
+    }]
   }]
 }];
 
