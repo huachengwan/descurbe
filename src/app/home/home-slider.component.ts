@@ -12,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeSliderComponent implements OnInit {
 
   constructor() {
-    const homeSlider = require('../../assets/js/slider/home-slider');
+    const homeSlider = require('../../assets/js/swipe-slider/slider2');
     homeSlider();
   }
 

@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit, EventEmitter, Output } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 import { NgbModal, ModalDismissReasons, NgbPanelChangeEvent, NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 declare var $: any;
@@ -14,7 +15,10 @@ export class AdminNavigationComponent implements OnInit {
   @Output() toggleSidebar = new EventEmitter<void>();
 
   public config: PerfectScrollbarConfigInterface = {};
-  constructor(private modalService: NgbModal) {}
+  constructor(
+    private modalService: NgbModal,
+    private router: Router
+  ) {}
 
   public showSearch = false;
 
@@ -22,6 +26,11 @@ export class AdminNavigationComponent implements OnInit {
   mymessages: Object[] = [];
 
   ngOnInit() {
+  }
+
+  logout() {
+    window.localStorage.removeItem('user');
+    this.router.navigate(['']);
   }
 
 }

@@ -69,4 +69,7 @@ var init_slider = function() {
   })
 };
 
-setTimeout(init_slider, 1000);
+module.exports = function(){
+  setTimeout(init_slider, 1000);
+}
+
