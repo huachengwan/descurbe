@@ -9,6 +9,24 @@ export const ROUTES: RouteInfo[] = [{
     labelClass: '',
     extralink: false,
     submenu: []
+  }, {
+    path: '',
+    title: 'Events & Articles',
+    icon: '',
+    class: 'nav-small-cap',
+    label: '',
+    labelClass: '',
+    extralink: true,
+    submenu: []
+  }, {
+    path: '/admin/entry-event',
+    title: 'Events Entry',
+    icon: '',
+    class: '',
+    label: '',
+    labelClass: '',
+    extralink: false,
+    submenu: []
   }
   /*, {
     path: '',

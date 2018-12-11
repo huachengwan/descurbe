@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin.component';
 import { OnlyAdminUsersGuard } from './admin-user-guard';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { EntryEventComponent } from './entry-event/entry-event.component';
 
 const routes: Routes = [{
   path: 'admin',
@@ -14,6 +15,9 @@ const routes: Routes = [{
     children: [{
       path: '',
       component: DashboardComponent
+    }, {
+      path: 'entry-event',
+      component: EntryEventComponent
     }]
   }]
 }];

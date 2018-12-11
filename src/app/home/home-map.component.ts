@@ -6,14 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styles: [`
     agm-map {
       height: 726px;
-    }
-    @media (max-width: 767.98px) {
-      agm-map {
+      @media (max-width: 767.98px) {
         height: 440px;
       }
-    }
-    @media (max-width: 479.98px) {
-      agm-map {
+      @media (max-width: 479.98px) {
         height: 280px;
       }
     }

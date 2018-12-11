@@ -12,13 +12,15 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
 };
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { EntryEventComponent } from './entry-event/entry-event.component';
 
 @NgModule({
   declarations: [
     AdminComponent,
     AdminNavigationComponent,
     AdminSidebarComponent,
-    DashboardComponent
+    DashboardComponent,
+    EntryEventComponent
   ],
   imports: [
     CommonModule,
