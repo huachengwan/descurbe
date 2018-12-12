@@ -57,6 +57,7 @@ import { CafeDetailComponent } from './home/cafe/detail/detail.component';
 import { BarComponent } from './home/bar/bar.component';
 import { HotelComponent } from './home/hotel/hotel.component';
 import { BathComponent } from './home/bath/bath.component';
+import { HotelCheckFormComponent } from './home/hotel/check-form.component';
 
 @NgModule({
   declarations: [
@@ -93,6 +94,7 @@ import { BathComponent } from './home/bath/bath.component';
     BarComponent,
     HotelComponent,
     BathComponent,
+    HotelCheckFormComponent,
     
   ],
   imports: [

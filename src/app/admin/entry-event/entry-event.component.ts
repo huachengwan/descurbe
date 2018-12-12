@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-entry-event',
+  selector: 'admin-entry-event',
   templateUrl: './entry-event.component.html',
   styleUrls: ['./entry-event.component.scss']
 })
